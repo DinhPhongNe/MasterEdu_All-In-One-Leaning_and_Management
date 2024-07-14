@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-### **COMING SOON**
+### MasterEdu là một dự án nhằm tạo ra một ứng dụng quản lý học sinh hiện đại, phát triển nhằm tối ưu hóa quy trình giáo dục. Được thiết kế để đáp ứng mọi nhu cầu của giáo viên, học sinh và phụ huynh, MasterEdu không chỉ tích hợp các tính năng cơ bản mà còn có các chức năng độc quyền. Ứng dụng hiện đang trong giai đoạn phát triển và thử nghiệm, hứa hẹn mang đến giải pháp quản lý hiệu quả cho cộng đồng giáo dục.
 
 <h1 align="center">
   <br>
@@ -21,7 +21,12 @@
 
 ## 🚀 Bắt đầu nào
 
-- Mở terminal và chạy các lệnh sau
+- Trước tiên hãy mở terminal lên và chạy lệnh sau
+```
+pip install requirements.txt
+```
+
+- tiếp tục chạy các lệnh sau
 
 ```
 git clone https://github.com/DinhPhongNe/School_Management_System_All-In-One
@@ -56,3 +61,12 @@ python main.py
 16. Tính năng lập kế hoạch học tập
 17. Tính năng quản lý học liệu
 18. Tính năng gia nhập câu lạc bộ
+
+<h2>
+  <br>
+  Kế hoạch phát triển MasterEdu - Mạnh mẽ, Hiệu quả, Bứt phá tiềm năng
+  <br>
+</h2>
+
+### *Giai đoạn 1: Hoàn thiện tính năng cốt lõi*
+### Mục tiêu: Hoàn thiện các tính năng cơ bản của MasterEdu, đảm bảo ứng dụng hoạt động ổn định.
