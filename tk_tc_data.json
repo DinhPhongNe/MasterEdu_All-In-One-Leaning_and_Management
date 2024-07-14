@@ -1,0 +1,22 @@
+{
+    "Danh_sach_tai_khoan_teacher": [
+        {
+            "id_tai_khoan": 1001,
+            "ten_tai_khoan": "admin",
+            "MK_tai_khoan": "admin",
+            "so_dien_thoai": "0987654321",
+            "birthday": "27-04-1999",
+            "age": 25,
+            "gender": "male"
+        },
+        {
+            "id_tai_khoan": 1002,
+            "ten_tai_khoan": "e",
+            "MK_tai_khoan": "123456",
+            "so_dien_thoai": 123556677,
+            "birthday": "11/11/2012",
+            "age": 12,
+            "gender": "Nam"
+        }
+    ]
+}

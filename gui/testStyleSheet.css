@@ -1,0 +1,28 @@
+#comboBox{
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+#comboBox::drop-down{
+    border: 0px;
+}
+
+#comboBox::down-arrow{
+	image: url(:/icons/down-arrow.png);
+    width: 12px;
+    height: 12px;
+    margin-right: 15px;
+}
+
+#comboBox:on{
+    border: 4px solid #c2dbfe;
+}
+
+#comboBox QListView{
+    font-size: 12px;
+    border: 1px solid rgba(0,0,0, 10%);
+    padding: 5px;
+    background-color: #fff;
+    outline: 0px;
+}
