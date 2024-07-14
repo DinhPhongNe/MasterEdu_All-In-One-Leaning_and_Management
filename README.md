@@ -62,11 +62,24 @@ python main.py
 17. Tính năng quản lý học liệu
 18. Tính năng gia nhập câu lạc bộ
 
-<h2>
+<h2 align="center">
   <br>
-  Kế hoạch phát triển MasterEdu - Mạnh mẽ, Hiệu quả, Bứt phá tiềm năng
+   Kế hoạch phát triển MasterEdu - Mạnh mẽ, Hiệu quả, Bứt phá tiềm năng
   <br>
 </h2>
 
-### *Giai đoạn 1: Hoàn thiện tính năng cốt lõi*
-### Mục tiêu: Hoàn thiện các tính năng cơ bản của MasterEdu, đảm bảo ứng dụng hoạt động ổn định.
+### *Giai đoạn 1: Khởi động*
+### Mục tiêu: Ổn định nền tảng, hoàn thiện các tính năng cơ bản.
+#### ⚪ Nhiệm vụ:
+- ➼ Rà soát, tối ưu code hiện có, đảm bảo code chạy mượt, logic rõ ràng, dễ bảo trì.
+- ➼ Hoàn thiện giao diện người dùng (UI) cho các tính năng hiện có, đảm bảo tính thẩm mỹ, dễ sử dụng cho cả giáo viên, học sinh và phụ huynh.
+- ➼ Xây dựng hệ thống cơ sở dữ liệu (CSDL) ổn định, hiệu quả, đảm bảo tính bảo mật thông tin.
+- ➼ Viết tài liệu hướng dẫn sử dụng chi tiết cho người dùng.
+
+### *Giai đoạn 2: Phát triển tính năng cốt lõi*
+### Mục tiêu: Ổn định nền tảng, hoàn thiện các tính năng cơ bản.
+#### ⚪ Nhiệm vụ:
+- ➼ **Hệ thống quản lý lớp học**: Cho phép giáo viên tạo/quản lý lớp học, thêm/xóa học sinh, chia sẻ tài liệu, tạo bài tập, chấm điểm.
+- ➼ **Hệ thống quản lý điểm số**: Lưu trữ, thống kê, phân tích điểm số học sinh theo nhiều hình thức, cho phép xuất file Excel.
+- ➼ **Hệ thống giao bài tập**: Giáo viên có thể giao bài tập theo dạng văn bản, file, video; học sinh có thể nộp bài, theo dõi tiến độ.
+- ➼ **Hệ thống xem video**: Giới hạn thời gian xem video cho học sinh, đảm bảo tính hiệu quả của việc học.
