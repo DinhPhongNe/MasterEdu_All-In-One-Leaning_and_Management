@@ -49,6 +49,10 @@ python main.py
 9. Tính năng chia giáo viên cho các lớp
 10. Tính năng đưa thông báo khi có sự kiện,...
 11. Tính năng mượn sách online từ thư viện
-12. Tính năng báo cáo tình hình học tập của lớp ( bao gồm điểm, bảng xếp hạng học sinh
+12. Tính năng báo cáo tình hình học tập của lớp ( bao gồm điểm, bảng xếp hạng học sinh,.. )
 13. Tính năng gửi thông báo đóng học phí
 14. Tích hợp AI vào MasterEdu
+15. Tính năng nhật kí học tập
+16. Tính năng lập kế hoạch học tập
+17. Tính năng quản lý học liệu
+18. Tính năng gia nhập câu lạc bộ
