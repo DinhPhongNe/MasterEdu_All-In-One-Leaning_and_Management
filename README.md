@@ -1,6 +1,5 @@
-![Home Screen](./readme_im/background-im.jpeg)
-# 
-## 
+![Background Image](./readme_im/background-im.jpg)
+
 <h1 align="center">
   <br>
   MasterEdu – Mạnh mẽ, Hiệu quả, Bứt phá tiềm năng
