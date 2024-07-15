@@ -77,6 +77,9 @@ python main.py
 17. Tính năng quản lý học liệu
 18. Tính năng gia nhập câu lạc bộ
 
+## 📦 **Những tính năng đang được lên kế hoạch cho MasterEdu**
+1. Tính năng giải bài tập ( hỏi gia sư,... )
+
 <h1 align="center">
   <br>
    📣 Kế hoạch phát triển MasterEdu 📣
