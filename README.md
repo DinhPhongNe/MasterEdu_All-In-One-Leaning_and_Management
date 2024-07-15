@@ -7,6 +7,13 @@
   <br>
 </h1>
 
+</div>
+<h1 align="center">
+  <img src="./readme_im/logo_masteredu.png" alt="Girl in a jacket" width="700" height="600">
+</h1>
+
+
+
 <p align="center">
     <a href="https://github.com/DinhPhongNe/School_Management_System_All-In-One/edit/main/README.md" class="button-style"><strong>📘 Xem đầy đủ README.md</strong></a>
     ·
