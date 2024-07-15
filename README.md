@@ -33,6 +33,7 @@ pip install requirements.txt
 
 ```
 git clone https://github.com/DinhPhongNe/School_Management_System_All-In-One
+cd School_Management_System_All-In-One
 python main.py
 ```
 
