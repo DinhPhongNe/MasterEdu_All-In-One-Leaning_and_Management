@@ -1,10 +1,21 @@
 ![Background Image](./readme_im/background-im.jpg)
 
+</div>
 <h1 align="center">
   <br>
   MasterEdu – Mạnh mẽ, Hiệu quả, Bứt phá tiềm năng
   <br>
 </h1>
+
+<p align="center">
+    <a href="https://github.com/DinhPhongNe/School_Management_System_All-In-One/edit/main/README.md" class="button-style"><strong>📘 Xem đầy đủ README.md</strong></a>
+    ·
+    <a href="https://github.com/DinhPhongNe/School_Management_System_All-In-One/issues">🐞 Báo cáo lỗi</a>
+    ·
+    <a href="https://github.com/DinhPhongNe/School_Management_System_All-In-One/issues">🛠️ Yêu cầu tính năng mới</a>
+</p>
+
+### Hiện trạng: Còn trong quá trình phát triển
 
 ### MasterEdu là một dự án nhằm tạo ra một ứng dụng quản lý học sinh hiện đại, phát triển nhằm tối ưu hóa quy trình giáo dục. Được thiết kế để đáp ứng mọi nhu cầu của giáo viên, học sinh và phụ huynh, MasterEdu không chỉ tích hợp các tính năng cơ bản mà còn có các chức năng độc quyền. Ứng dụng hiện đang trong giai đoạn phát triển và thử nghiệm, hứa hẹn mang đến giải pháp quản lý hiệu quả cho cộng đồng giáo dục.
 
@@ -17,9 +28,9 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Qt](https://img.shields.io/badge/Qt-%23217346.svg?style=for-the-badge&logo=Qt&logoColor=white)
 
-### `pip install python-vlc`
-### `pip install opencv-python`
-### `pip install PyQt6`
+### `python-vlc`
+### `opencv-python`
+### `PyQt6`
 [Qt Designer](https://www.qt.io/download-dev)
 
 ## 🚀 Bắt đầu nào
