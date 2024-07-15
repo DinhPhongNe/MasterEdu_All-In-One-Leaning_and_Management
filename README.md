@@ -79,6 +79,8 @@ python main.py
 
 ## 📦 **Những tính năng đang được lên kế hoạch cho MasterEdu**
 1. Tính năng giải bài tập ( hỏi gia sư,... )
+2. Tính năng giải đố các câu hỏi của từng môn học trong thời gian có hạn
+3. Tính năng tính chuỗi ngày học, không học mất chuỗi ráng chịu
 
 <h1 align="center">
   <br>
