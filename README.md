@@ -14,6 +14,8 @@
   <br>
 </h1>
 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
 ### `pip install python-vlc`
 ### `pip install opencv-python`
 ### `pip install PyQt6`
@@ -62,11 +64,11 @@ python main.py
 17. Tính năng quản lý học liệu
 18. Tính năng gia nhập câu lạc bộ
 
-<h2 align="center">
+<h1 align="center">
   <br>
-   Kế hoạch phát triển MasterEdu - Mạnh mẽ, Hiệu quả, Bứt phá tiềm năng
+   📣 Kế hoạch phát triển MasterEdu 📣
   <br>
-</h2>
+</h1>
 
 ### *Giai đoạn 1: Khởi động*
 ### Mục tiêu: Ổn định nền tảng, hoàn thiện các tính năng cơ bản.
