@@ -1,3 +1,0 @@
-python-vlc
-opencv-python
-PyQt6
