@@ -24,7 +24,7 @@
 
 ### Hiện trạng: Còn trong quá trình phát triển
 
-### MasterEdu là một dự án nhằm tạo ra một ứng dụng quản lý học sinh hiện đại, phát triển nhằm tối ưu hóa quy trình giáo dục. Được thiết kế để đáp ứng mọi nhu cầu của giáo viên, học sinh và phụ huynh, MasterEdu không chỉ tích hợp các tính năng cơ bản mà còn có các chức năng độc quyền. Ứng dụng hiện đang trong giai đoạn phát triển và thử nghiệm, hứa hẹn mang đến giải pháp quản lý hiệu quả cho cộng đồng giáo dục.
+### MasterEdu là một dự án nhằm tạo ra một ứng dụng học tập và quản lý học sinh hiện đại, phát triển nhằm tối ưu hóa quy trình giáo dục. Được thiết kế để đáp ứng mọi nhu cầu của giáo viên, học sinh và phụ huynh, MasterEdu không chỉ tích hợp các tính năng cơ bản mà còn có các chức năng độc quyền. Ứng dụng hiện đang trong giai đoạn phát triển và thử nghiệm, hứa hẹn mang đến giải pháp quản lý hiệu quả cho cộng đồng giáo dục.
 
 <h1 align="center">
   <br>
