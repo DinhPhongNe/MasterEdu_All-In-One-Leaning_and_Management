@@ -90,6 +90,8 @@ python main.py
 2. Tính năng giải đố các câu hỏi của từng môn học trong thời gian có hạn
 3. Tính năng tính chuỗi ngày học, không học mất chuỗi ráng chịu
 4. Tạo ra một diễn đàn "Học tập" đúng nghĩa
+5. Tính năng giao diện trắng/đen
+6. Tích hợp với các công cụ học tập dựa trên trí tuệ nhân tạo ( phân tích điểm học sinh để cho các câu giải đố tuỳ thuộc vào trình độ học sinh )
 
 <h1 align="center">
   <br>
