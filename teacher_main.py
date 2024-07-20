@@ -1,7 +1,10 @@
 from PyQt6.QtCore import Qt
-from PyQt6.QtWidgets import QMainWindow, QMessageBox, QTabWidget, QComboBox, QLineEdit, QTableWidget, QDialog, QVBoxLayout, QPushButton, QLabel, QGridLayout, QTableWidgetItem
+from PyQt6.QtWidgets import QMainWindow, QMessageBox, QTabWidget, QComboBox, QLineEdit, QTableWidget, QFileDialog, QDialog, QVBoxLayout, QPushButton, QLabel, QGridLayout, QTableWidgetItem
 from PyQt6 import uic
 import json
+from reportlab.pdfgen import canvas
+from reportlab.lib.pagesizes import letter
+from reportlab.lib.units import inch
 from student_grades import StudentGrades
 from view_assignments import ViewAssignments
 from assignment_upload import AssignmentUpload
@@ -89,7 +92,110 @@ class TeacherMain(QMainWindow, StudentGrades, ViewAssignments, AssignmentUpload)
         self.hk_sua = None
         self.luu_btn_sua = None
         self.grid_layout_sua = None
+        
+        self.chon_khoi = self.findChild(QComboBox, "chon_khoi")
+        self.chon_lop = self.findChild(QComboBox, "chon_lop")
+        self.khoi_lop = {"6": ["6.1", "6.2", "6.3", "6.4", "6.5", "6.6", "6.7", "6.8"],
+                          "7": ["7.1", "7.2", "7.3", "7.4", "7.5", "7.6", "7.7", "7.8"],
+                          "8": ["8.1", "8.2", "8.3", "8.4", "8.5", "8.6", "8.7", "8.8"],
+                          "9": ["9.1", "9.2", "9.3", "9.4", "9.5", "9.6", "9.7", "9.8"]}
+        self.chon_khoi.addItems(self.khoi_lop.keys())
+        self.chon_khoi.currentTextChanged.connect(self.update_lop_combobox)
+        self.chon_lop.currentTextChanged.connect(self.filter_students_by_class)
+        
+        self.print_btn = self.findChild(QPushButton, "print_btn")
+        self.print_btn.clicked.connect(self.print_table)
+        
 
+    def update_lop_combobox(self, text):
+        self.chon_lop.clear()
+        self.chon_lop.addItems(self.khoi_lop.get(text, []))
+
+    def filter_students_by_class(self, lop):
+        for row in range(self.table_HK1.rowCount()):
+            so_thu_tu = self.table_HK1.item(row, 0).text()
+            khoi = so_thu_tu[:2]
+            lop_hien_tai = f"{khoi}.{so_thu_tu[3:]}"
+            match = lop_hien_tai == lop
+            self.table_HK1.setRowHidden(row, not match)
+
+        for row in range(self.table_HK2.rowCount()):
+            so_thu_tu = self.table_HK2.item(row, 0).text()
+            khoi = so_thu_tu[:2]
+            lop_hien_tai = f"{khoi}.{so_thu_tu[3:]}"
+            match = lop_hien_tai == lop
+            self.table_HK2.setRowHidden(row, not match)
+
+        for row in range(self.table_CN.rowCount()):
+            so_thu_tu = self.table_CN.item(row, 0).text()
+            khoi = so_thu_tu[:2]
+            lop_hien_tai = f"{khoi}.{so_thu_tu[3:]}"
+            match = lop_hien_tai == lop
+            self.table_CN.setRowHidden(row, not match)
+    def print_table(self):
+        current_tab_index = self.tab_widget.currentIndex()
+        if current_tab_index == 0:
+            table_to_print = self.table_HK1
+            semester = "Học kỳ 1"
+        elif current_tab_index == 1:
+            table_to_print = self.table_HK2
+            semester = "Học kỳ 2"
+        elif current_tab_index == 2:
+            table_to_print = self.table_CN
+            semester = "Cả năm"
+        else:
+            self.msg_box.setText("Vui lòng chọn bảng điểm để in.")
+            self.msg_box.exec()
+            return
+
+        file_path, _ = QFileDialog.getSaveFileName(
+            self,
+            "Lưu Bảng Điểm",
+            "Bảng điểm.pdf",
+            "PDF Files (*.pdf)",
+            options=QFileDialog.Option.DontUseNativeDialog
+        )
+        if not file_path:
+            return
+
+        c = canvas.Canvas(file_path, pagesize=letter)
+        c.setFont("Helvetica", 10)
+
+        # Vẽ tiêu đề
+        c.drawString(inch, 10.5 * inch, f"Bảng Điểm {semester}")
+
+        # Lấy số cột từ bảng điểm
+        num_cols = table_to_print.columnCount()
+
+        # Lấy dữ liệu từ bảng
+        table_data = []
+        # Lấy header labels
+        header_labels = [table_to_print.horizontalHeaderItem(col).text() for col in range(num_cols)]
+        table_data.append(header_labels)
+        # Lấy dữ liệu từng dòng
+        for row in range(table_to_print.rowCount()):
+            row_data = [table_to_print.item(row, col).text() if table_to_print.item(row, col) else "" for col in range(num_cols)]
+            table_data.append(row_data)
+
+        # Vẽ bảng
+        table_width = 7 * inch
+        table_height = 9 * inch
+        col_widths = [table_width / num_cols] * num_cols # Tính độ rộng mỗi cột dựa trên số cột thực tế
+        row_heights = [table_height / len(table_data)] * len(table_data)
+
+        x = inch
+        y = 10 * inch
+        for row in table_data:
+            for i, cell in enumerate(row):
+                if i < num_cols: # Kiểm tra chỉ số cột
+                    c.drawString(x + i * col_widths[i], y, cell)
+            y -= row_heights[0]
+
+        c.save()
+
+        self.msg_box.setText(f"Đã lưu bảng điểm vào {file_path}")
+        self.msg_box.exec()
+        
     def logout(self):
         self.hide()
         # Hiển thị lại giao diện đăng nhập hoặc thực hiện các thao tác đăng xuất khác
@@ -680,8 +786,8 @@ class TeacherMain(QMainWindow, StudentGrades, ViewAssignments, AssignmentUpload)
         self.sua_diem_dialog.close()
 
     def add_information(self):
-        if not self.stt.text() or not self.ho.text() or not self.ten.text():
-            self.msg_box.setText("Vui lòng nhập đầy đủ thông tin!")
+        if not self.chon_khoi.currentText() or not self.chon_lop.currentText():
+            self.msg_box.setText("Vui lòng chọn khối và lớp!")
             self.msg_box.exec()
             return
 
@@ -695,31 +801,24 @@ class TeacherMain(QMainWindow, StudentGrades, ViewAssignments, AssignmentUpload)
             return
 
         new_student = {
+            "None": 0,
             "Số thứ tự": stt,
             "Họ": self.ho.text(),
             "Tên": self.ten.text(),
+            "birthday": "",
+            "id_tai_khoan": int(stt), # Chuyển đổi stt thành số nguyên
+            "MK_tai_khoan": "123",
+            "so_thu_tu": "",
+            "so_dien_thoai": "",
+            "age": "",
             "Điểm trong năm": {
-                "Học kỳ 1": {
-                    "Toán": {},
-                    "Văn": {},
-                    "Anh": {},
-                    "Khoa học tự nhiên": {},
-                    "Lịch sử - địa lý": {},
-                    "Tin học": {},
-                    "Công nghệ": {},
-                    "Giáo dục công dân": {},
-                },
-                "Học kỳ 2": {
-                    "Toán": {},
-                    "Văn": {},
-                    "Anh": {},
-                    "Khoa học tự nhiên": {},
-                    "Lịch sử - địa lý": {},
-                    "Tin học": {},
-                    "Công nghệ": {},
-                    "Giáo dục công dân": {},
-                },
+                "Học kỳ 1": {},
+                "Học kỳ 2": {}
             },
+            "Điểm trung bình cả năm": {
+                "Học kỳ 1": {},
+                "Học kỳ 2": {}
+            }
         }
 
         new_student["Điểm trung bình cả năm"] = {

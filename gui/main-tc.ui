@@ -376,7 +376,7 @@ border-radius:5px;</string>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="semester_1_tab">
      <attribute name="title">
@@ -1458,92 +1458,6 @@ color: #F8F2EC;</string>
      </widget>
     </widget>
    </widget>
-   <widget class="QComboBox" name="nhap_diem_box">
-    <property name="geometry">
-     <rect>
-      <x>690</x>
-      <y>340</y>
-      <width>141</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">#nhap_diem_box{
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    padding-left: 10px;
-	color:  #000000 ;
-}
-
-#nhap_diem_box::drop-down{
-    border: 0px;
-}
-
-#nhap_diem_box::down-arrow{
-	image: (:/icons/down-arrow.png);
-    width: 12px;
-    height: 12px;
-    margin-right: 15px;
-}
-
-#nhap_diem_box:on{
-    border: 4px solid #c2dbfe;
-}
-
-#nhap_diem_box QListView{
-    font-size: 12px;
-    border: 1px solid rgba(0,0,0, 10%);
-    padding: 5px;
-    background-color: #000000 ;
-    outline: 0px;
-}</string>
-    </property>
-    <item>
-     <property name="text">
-      <string>Toán</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Văn</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Anh</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Khoa học tự nhiên</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Lịch sử - địa lý</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Tin học</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Công nghệ</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Giáo dục công dân</string>
-     </property>
-    </item>
-   </widget>
    <widget class="QFrame" name="info_frame_8">
     <property name="geometry">
      <rect>
@@ -1689,50 +1603,10 @@ color: #F8F2EC;</string>
      </item>
     </layout>
    </widget>
-   <widget class="QPushButton" name="btvn_upload_btn_4">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>340</y>
-      <width>521</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="font">
-     <font>
-      <family>Bahnschrift</family>
-      <pointsize>16</pointsize>
-      <weight>75</weight>
-      <italic>false</italic>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius: 10px;
-font: 600 16pt &quot;Bahnschrift&quot;;
-background-color:rgb(129, 201, 255);
-color: #F8F2EC;</string>
-    </property>
-    <property name="text">
-     <string>Vui lòng chọn cột điểm môn mà thầy/cô muốn nhập điểm</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="nhap_diem_mon_btn">
     <property name="geometry">
      <rect>
-      <x>840</x>
+      <x>140</x>
       <y>340</y>
       <width>101</width>
       <height>31</height>
@@ -1846,6 +1720,145 @@ color: #F8F2EC;</string>
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QComboBox" name="chon_lop">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>340</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#chon_lop{
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding-left: 10px;
+	color:  #000000 ;
+}
+
+#chon_lop::drop-down{
+    border: 0px;
+}
+
+#chon_lop::down-arrow{
+	image: (:/icons/down-arrow.png);
+    width: 12px;
+    height: 12px;
+    margin-right: 15px;
+}
+
+#chon_lop:on{
+    border: 4px solid #c2dbfe;
+}
+
+#chon_lop QListView{
+    font-size: 12px;
+    border: 1px solid rgba(0,0,0, 10%);
+    padding: 5px;
+    background-color: #000000 ;
+    outline: 0px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="chon_khoi">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>340</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#chon_khoi{
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding-left: 10px;
+	color:  #000000 ;
+}
+
+#chon_khoi::drop-down{
+    border: 0px;
+}
+
+#chon_khoi::down-arrow{
+	image: (:/icons/down-arrow.png);
+    width: 12px;
+    height: 12px;
+    margin-right: 15px;
+}
+
+#chon_khoi:on{
+    border: 4px solid #c2dbfe;
+}
+
+#chon_khoi QListView{
+    font-size: 12px;
+    border: 1px solid rgba(0,0,0, 10%);
+    padding: 5px;
+    background-color: #000000 ;
+    outline: 0px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="print_btn">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>340</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0,0,0);
+background-color: rgb(132,232,246);</string>
+    </property>
+    <property name="locale">
+     <locale language="Vietnamese" country="Vietnam"/>
+    </property>
+    <property name="text">
+     <string>In bảng điểm</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../#017_Students information system/icons/add.svg</normaloff>../#017_Students information system/icons/add.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
    </widget>
   </widget>
  </widget>

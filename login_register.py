@@ -168,26 +168,36 @@ class LoginRegister(QMainWindow):
 
     def register_student(self, phone, password):
         try:
-            with open("tk_hs_data.json", "r", encoding="utf-8") as f:
+            with open("diem_database.json", "r", encoding="utf-8") as f:
                 tk_hs_data = json.load(f)
         except FileNotFoundError:
-            tk_hs_data = {"Danh_sach_tai_khoan": []}
+            tk_hs_data = {"Danh_sach_hoc_sinh": []}
 
         so_thu_tu = self.generate_random_student_id()
 
         new_student = {
-            "id_tai_khoan": str(so_thu_tu),
-            "ten_tai_khoan": "",
-            "MK_tai_khoan": password,
-            "so_thu_tu": str(so_thu_tu),
-            "so_dien_thoai": str(phone),
+            "None": 0,
+            "Số thứ tự": str(so_thu_tu),
+            "Họ": "",
+            "Tên": "",
             "birthday": "",
+            "id_tai_khoan": so_thu_tu,
+            "MK_tai_khoan": password,
+            "so_thu_tu": "",
+            "so_dien_thoai": str(phone),
             "age": "",
-            "gender": "",
+            "Điểm trong năm": {
+                "Học kỳ 1": {},
+                "Học kỳ 2": {}
+            },
+            "Điểm trung bình cả năm": {
+                "Học kỳ 1": {},
+                "Học kỳ 2": {}
+            }
         }
-        tk_hs_data["Danh_sach_tai_khoan"].append(new_student)
+        tk_hs_data["Danh_sach_hoc_sinh"].append(new_student)
 
-        with open("tk_hs_data.json", "w", encoding="utf-8") as f:
+        with open("diem_database.json", "w", encoding="utf-8") as f:
             json.dump(tk_hs_data, f, indent=4, ensure_ascii=False)
 
         self.msg_box.setText("Đăng ký tài khoản học sinh thành công!")
@@ -198,9 +208,9 @@ class LoginRegister(QMainWindow):
         import random
         so_thu_tu = random.randint(88001, 88099)
         try:
-            with open("tk_hs_data.json", "r", encoding="utf-8") as f:
+            with open("diem_database.json", "r", encoding="utf-8") as f:
                 tk_hs_data = json.load(f)
-            while so_thu_tu in [int(tk['id_tai_khoan']) for tk in tk_hs_data.get("Danh_sach_tai_khoan", [])]:
+            while so_thu_tu in [int(tk['id_tai_khoan']) for tk in tk_hs_data.get("Danh_sach_hoc_sinh", [])]:
                 so_thu_tu = random.randint(88001, 88099)
         except FileNotFoundError:
             pass
@@ -225,14 +235,14 @@ class LoginRegister(QMainWindow):
         mat_khau = self.student_login.pass_HS.text()
 
         try:
-            with open("tk_hs_data.json", "r", encoding="utf-8") as f:
+            with open("diem_database.json", "r", encoding="utf-8") as f:
                 tk_hs_data = json.load(f)
         except FileNotFoundError:
-            self.msg_box.setText("Không tìm thấy file tk_hs_data.json!")
+            self.msg_box.setText("Không tìm thấy file diem_database.json")
             self.msg_box.exec()
             return
 
-        for tai_khoan in tk_hs_data.get("Danh_sach_tai_khoan", []):
+        for tai_khoan in tk_hs_data.get("Danh_sach_hoc_sinh", []):
             if (
                 str(tai_khoan.get("id_tai_khoan", "")) == id_tai_khoan
                 and str(tai_khoan.get("MK_tai_khoan", "")) == mat_khau
