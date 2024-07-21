@@ -38,6 +38,7 @@
 ### `python-vlc`
 ### `opencv-python`
 ### `PyQt6`
+### `reportlab`
 [Qt Designer](https://www.qt.io/download-dev)
 
 ## 🚀 Bắt đầu nào
