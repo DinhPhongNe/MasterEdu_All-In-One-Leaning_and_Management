@@ -90,3 +90,4 @@ python main.py
 2. Tính năng giải đố các câu hỏi của từng môn học trong thời gian có hạn
 3. Tính năng tính chuỗi ngày học, không học mất chuỗi ráng chịu
 4. Hệ thống thành tựu đạt được
+5. chế độ sáng/tối
