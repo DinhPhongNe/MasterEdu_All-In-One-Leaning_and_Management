@@ -2,6 +2,92 @@
     "Danh_sach_hoc_sinh": [
         {
             "None": 0,
+            "Số thứ tự": "88040",
+            "Họ": "Bui Thi",
+            "Tên": "Ninh Ninh",
+            "birthday": "",
+            "id_tai_khoan": 88040,
+            "MK_tai_khoan": "123",
+            "so_thu_tu": "",
+            "so_dien_thoai": "",
+            "age": "",
+            "Điểm trong năm": {
+                "Học kỳ 1": {},
+                "Học kỳ 2": {}
+            },
+            "Điểm trung bình cả năm": {
+                "Học kỳ 1": {
+                    "Toán": {
+                        "GK1": null,
+                        "HK1": null
+                    },
+                    "Văn": {
+                        "GK1": null,
+                        "HK1": null
+                    },
+                    "Anh": {
+                        "GK1": null,
+                        "HK1": null
+                    },
+                    "Khoa học tự nhiên": {
+                        "GK1": null,
+                        "HK1": null
+                    },
+                    "Lịch sử - địa lý": {
+                        "GK1": null,
+                        "HK1": null
+                    },
+                    "Tin học": {
+                        "GK1": null,
+                        "HK1": null
+                    },
+                    "Công nghệ": {
+                        "GK1": null,
+                        "HK1": null
+                    },
+                    "Giáo dục công dân": {
+                        "GK1": null,
+                        "HK1": null
+                    }
+                },
+                "Học kỳ 2": {
+                    "Toán": {
+                        "GK2": null,
+                        "HK2": null
+                    },
+                    "Văn": {
+                        "GK2": null,
+                        "HK2": null
+                    },
+                    "Anh": {
+                        "GK2": null,
+                        "HK2": null
+                    },
+                    "Khoa học tự nhiên": {
+                        "GK2": null,
+                        "HK2": null
+                    },
+                    "Lịch sử - địa lý": {
+                        "GK2": null,
+                        "HK2": null
+                    },
+                    "Tin học": {
+                        "GK2": null,
+                        "HK2": null
+                    },
+                    "Công nghệ": {
+                        "GK2": null,
+                        "HK2": null
+                    },
+                    "Giáo dục công dân": {
+                        "GK2": null,
+                        "HK2": null
+                    }
+                }
+            }
+        },
+        {
+            "None": 0,
             "Số thứ tự": "88041",
             "Họ": "Võ",
             "Tên": "Đình Phong",

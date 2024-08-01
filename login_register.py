@@ -69,11 +69,16 @@ class LoginRegister(QMainWindow):
             return
 
         if phone == "0987654321" and password == "admin":
-            self.close()
-            self.open_teacher_main()
+            self.teacher_login.close()
+            self.open_teacher_select_menu()
         else:
             self.msg_box.setText("Số điện thoại hoặc mật khẩu sai")
             self.msg_box.exec()
+
+    def open_teacher_select_menu(self):
+        from menu_select_tc import MenuSelectTC
+        self.teacher_select_menu = MenuSelectTC(self.data)
+        self.teacher_select_menu.show()
             
     def open_teacher_main(self):
         self.teacher_main = TeacherMain(self.data)
@@ -247,12 +252,17 @@ class LoginRegister(QMainWindow):
                 str(tai_khoan.get("id_tai_khoan", "")) == id_tai_khoan
                 and str(tai_khoan.get("MK_tai_khoan", "")) == mat_khau
             ):
-                self.student_login.hide()
-                self.open_student_main(tai_khoan)
+                self.student_login.close()
+                self.open_student_select_menu(tai_khoan)
                 return
 
         self.msg_box.setText("Sai ID tài khoản hoặc mật khẩu!")
         self.msg_box.exec()
+
+    def open_student_select_menu(self, tai_khoan):
+        from menu_select_hs import MenuSelectHS
+        self.student_select_menu = MenuSelectHS(self.data, tai_khoan)
+        self.student_select_menu.show()
         
     def open_student_main(self, tai_khoan):
         self.student_main = StudentMain(self.data, tai_khoan)
