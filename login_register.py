@@ -178,19 +178,254 @@ class LoginRegister(QMainWindow):
         except FileNotFoundError:
             tk_hs_data = {"Danh_sach_hoc_sinh": []}
 
-        so_thu_tu = self.generate_random_student_id()
-
+        # Tạo cấu trúc "Thông tin tài khoản" và "Thành tựu"
         new_student = {
             "None": 0,
-            "Số thứ tự": str(so_thu_tu),
-            "Họ": "",
-            "Tên": "",
-            "birthday": "",
-            "id_tai_khoan": so_thu_tu,
-            "MK_tai_khoan": password,
-            "so_thu_tu": "",
-            "so_dien_thoai": str(phone),
-            "age": "",
+            "Số thứ tự": "", # Sẽ được điền sau
+            "Họ": "", # Sẽ được điền sau
+            "Tên": "", # Sẽ được điền sau
+            "Thông tin tài khoản": {
+                "id_tai_khoan": self.generate_random_student_id(),
+                "grade": None, # Sẽ được điền sau
+                "class_name": None, # Sẽ được điền sau
+                "ten_tai_khoan": "", # Sẽ được điền sau
+                "MK_tai_khoan": password,
+                "so_thu_tu": None, # Sẽ được điền sau
+                "so_dien_thoai": str(phone),
+                "birthday": "", # Sẽ được điền sau
+                "age": None # Sẽ được điền sau
+            },
+            "Thành tựu": {
+                "Study hard": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Knowledge Discovery": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Self-learning Spirit": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Remember the Teacher": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Perfect Plan": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Learning from friends": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Spirit of cooperation": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "A real book": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Join the club": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Spirit of progress": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Unlimited skills": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "What is procrastination?": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Burning the language barrier": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Fluent in mother tongue": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "No need for a computer": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Exemplary Citizen": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Here comes the clerk": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Nothing can make it difficult for me": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Geography is balanced": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Practice test master": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Note-taking master": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Smart time management": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Challenge yourself": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Knowledge Scan Machine": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Talented Editor": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Super Focus": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Content Creation": False,
+                "Inspiration": False,
+                "Tech Genius": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False
+                },
+                "Explore MasterEdu": False,
+                "Knowledge Hunter": False,
+                "Super Memory": False,
+                "Learn Anytime - Anywhere": False,
+                "Excellent student of the year": False,
+                "The Flash": {
+                    "level_1": False,
+                    "level_2": False,
+                    "level_3": False,
+                    "level_4": False,
+                    "level_5": False
+                },
+                "Night Owl": False,
+                "Study - Study more - Study forever": False,
+                "Pioneer": False,
+                "Companion": False,
+                "Potential Contributor": False,
+                "Special Day": False,
+                "Potential Inventor": False,
+                "Technology Believer": False,
+                "Great Tester": False,
+                "Why so observant?": False,
+                "Lucky": False,
+                "What did you eat that's so bad?:": False,
+                "Comprehensive student": False,
+                "Brain Freeze": False,
+                "Go away spam": False,
+                "The Chosen One": False,
+                "You Are The Best": False,
+                "Happy New Year": False,
+                "It's his fault, his fault, his fault,...": False,
+                "Notification enthusiast": False,
+                "What's wrong with the keyboard?:": False,
+                "That network": False,
+                "Gratitude": False,
+                "Hey, the mic": False,
+                "King/Queen of skipping class": False,
+                "Back to overstudying": False,
+                "Encyclopedia": False,
+                "Decode the math problem": False
+            },
             "Điểm trong năm": {
                 "Học kỳ 1": {},
                 "Học kỳ 2": {}
@@ -200,6 +435,7 @@ class LoginRegister(QMainWindow):
                 "Học kỳ 2": {}
             }
         }
+
         tk_hs_data["Danh_sach_hoc_sinh"].append(new_student)
 
         with open("diem_database.json", "w", encoding="utf-8") as f:
@@ -247,13 +483,15 @@ class LoginRegister(QMainWindow):
             self.msg_box.exec()
             return
 
-        for tai_khoan in tk_hs_data.get("Danh_sach_hoc_sinh", []):
+        # Duyệt qua danh sách học sinh và kiểm tra thông tin tài khoản
+        for hoc_sinh in tk_hs_data.get("Danh_sach_hoc_sinh", []):
+            thong_tin_tai_khoan = hoc_sinh.get("Thông tin tài khoản", {})
             if (
-                str(tai_khoan.get("id_tai_khoan", "")) == id_tai_khoan
-                and str(tai_khoan.get("MK_tai_khoan", "")) == mat_khau
+                str(thong_tin_tai_khoan.get("id_tai_khoan", "")) == id_tai_khoan
+                and str(thong_tin_tai_khoan.get("MK_tai_khoan", "")) == mat_khau
             ):
                 self.student_login.close()
-                self.open_student_select_menu(tai_khoan)
+                self.open_student_select_menu(hoc_sinh)
                 return
 
         self.msg_box.setText("Sai ID tài khoản hoặc mật khẩu!")

@@ -2,102 +2,251 @@
     "Danh_sach_hoc_sinh": [
         {
             "None": 0,
-            "Số thứ tự": "88040",
-            "Họ": "Bui Thi",
-            "Tên": "Ninh Ninh",
-            "birthday": "",
-            "id_tai_khoan": 88040,
-            "MK_tai_khoan": "123",
-            "so_thu_tu": "",
-            "so_dien_thoai": "",
-            "age": "",
-            "Điểm trong năm": {
-                "Học kỳ 1": {},
-                "Học kỳ 2": {}
-            },
-            "Điểm trung bình cả năm": {
-                "Học kỳ 1": {
-                    "Toán": {
-                        "GK1": null,
-                        "HK1": null
-                    },
-                    "Văn": {
-                        "GK1": null,
-                        "HK1": null
-                    },
-                    "Anh": {
-                        "GK1": null,
-                        "HK1": null
-                    },
-                    "Khoa học tự nhiên": {
-                        "GK1": null,
-                        "HK1": null
-                    },
-                    "Lịch sử - địa lý": {
-                        "GK1": null,
-                        "HK1": null
-                    },
-                    "Tin học": {
-                        "GK1": null,
-                        "HK1": null
-                    },
-                    "Công nghệ": {
-                        "GK1": null,
-                        "HK1": null
-                    },
-                    "Giáo dục công dân": {
-                        "GK1": null,
-                        "HK1": null
-                    }
-                },
-                "Học kỳ 2": {
-                    "Toán": {
-                        "GK2": null,
-                        "HK2": null
-                    },
-                    "Văn": {
-                        "GK2": null,
-                        "HK2": null
-                    },
-                    "Anh": {
-                        "GK2": null,
-                        "HK2": null
-                    },
-                    "Khoa học tự nhiên": {
-                        "GK2": null,
-                        "HK2": null
-                    },
-                    "Lịch sử - địa lý": {
-                        "GK2": null,
-                        "HK2": null
-                    },
-                    "Tin học": {
-                        "GK2": null,
-                        "HK2": null
-                    },
-                    "Công nghệ": {
-                        "GK2": null,
-                        "HK2": null
-                    },
-                    "Giáo dục công dân": {
-                        "GK2": null,
-                        "HK2": null
-                    }
-                }
-            }
-        },
-        {
-            "None": 0,
             "Số thứ tự": "88041",
             "Họ": "Võ",
             "Tên": "Đình Phong",
-            "id_tai_khoan": 88041,
-            "ten_tai_khoan": "Võ Đình Phong",
-            "MK_tai_khoan": 123,
-            "so_thu_tu": 41,
-            "so_dien_thoai": 9876543210,
-            "birthday": "27-04-2006",
-            "age": 16,
+            "Thông tin tài khoản": {
+                "id_tai_khoan": 88041,
+                "grade": 8,
+                "class_name": 88,
+                "ten_tai_khoan": "Võ Đình Phong",
+                "MK_tai_khoan": 123,
+                "so_thu_tu": 41,
+                "so_dien_thoai": 9876543210,
+                "birthday": "27-04-2006",
+                "age": 16
+            },
+            "Thành tựu": {
+                "Study hard": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Knowledge Discovery": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Self-learning Spirit": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Remember the Teacher": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Perfect Plan": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Learning from friends": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Spirit of cooperation": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "A real book": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Join the club": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Spirit of progress": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Unlimited skills": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "What is procrastination?": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Burning the language barrier": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Fluent in mother tongue": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "No need for a computer": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Exemplary Citizen": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Here comes the clerk": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Nothing can make it difficult for me": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Geography is balanced": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Practice test master": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Note-taking master": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Smart time management": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Challenge yourself": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Knowledge Scan Machine": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Talented Editor": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Super Focus": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Content Creation": false,
+                "Inspiration": false,
+                "Tech Genius": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false
+                },
+                "Explore MasterEdu": false,
+                "Knowledge Hunter": false,
+                "Super Memory": false,
+                "Learn Anytime - Anywhere": false,
+                "Excellent student of the year": false,
+                "The Flash": {
+                    "level_1": false,
+                    "level_2": false,
+                    "level_3": false,
+                    "level_4": false,
+                    "level_5": false
+                },
+                "Night Owl": false,
+                "Study - Study more - Study forever": false,
+                "Pioneer": false,
+                "Companion": false,
+                "Potential Contributor": false,
+                "Special Day": false,
+                "Potential Inventor": false,
+                "Technology Believer": false,
+                "Great Tester": false,
+                "Why so observant?": false,
+                "Lucky": false,
+                "What did you eat that's so bad?:": false,
+                "Comprehensive student": false,
+                "Brain Freeze": false,
+                "Go away spam": false,
+                "The Chosen One": false,
+                "You Are The Best": false,
+                "Happy New Year": false,
+                "It's his fault, his fault, his fault,...": false,
+                "Notification enthusiast": false,
+                "What's wrong with the keyboard?:": false,
+                "That network": false,
+                "Gratitude": false,
+                "Hey, the mic": false,
+                "King/Queen of skipping class": false,
+                "Back to overstudying": false,
+                "Encyclopedia": false,
+                "Decode the math problem": false
+            },
             "Điểm trong năm": {
                 "Học kỳ 1": {
                     "Toán": {

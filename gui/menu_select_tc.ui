@@ -20,8 +20,8 @@
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>120</y>
+      <x>300</x>
+      <y>60</y>
       <width>201</width>
       <height>201</height>
      </rect>
@@ -86,8 +86,8 @@ color: #F8F2EC;</string>
    <widget class="QFrame" name="frame_2">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>120</y>
+      <x>530</x>
+      <y>60</y>
       <width>201</width>
       <height>201</height>
      </rect>
@@ -152,8 +152,8 @@ color: #F8F2EC;</string>
    <widget class="QFrame" name="frame_4">
     <property name="geometry">
      <rect>
-      <x>920</x>
-      <y>120</y>
+      <x>980</x>
+      <y>60</y>
       <width>201</width>
       <height>201</height>
      </rect>
@@ -211,15 +211,15 @@ background-color:rgb(129, 201, 255);
 color: #F8F2EC;</string>
      </property>
      <property name="text">
-      <string>Hỏi bài gia sư</string>
+      <string>Giải đáp bài tập</string>
      </property>
     </widget>
    </widget>
    <widget class="QFrame" name="frame_5">
     <property name="geometry">
      <rect>
-      <x>690</x>
-      <y>120</y>
+      <x>750</x>
+      <y>60</y>
       <width>201</width>
       <height>201</height>
      </rect>
@@ -284,8 +284,8 @@ color: #F8F2EC;</string>
    <widget class="QFrame" name="frame_6">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>360</y>
+      <x>530</x>
+      <y>280</y>
       <width>201</width>
       <height>201</height>
      </rect>
@@ -350,8 +350,8 @@ color: #F8F2EC;</string>
    <widget class="QFrame" name="frame_9">
     <property name="geometry">
      <rect>
-      <x>690</x>
-      <y>360</y>
+      <x>750</x>
+      <y>280</y>
       <width>201</width>
       <height>201</height>
      </rect>
@@ -416,8 +416,8 @@ color: #F8F2EC;</string>
    <widget class="QFrame" name="frame_10">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>360</y>
+      <x>300</x>
+      <y>280</y>
       <width>201</width>
       <height>201</height>
      </rect>
@@ -482,8 +482,8 @@ color: #F8F2EC;</string>
    <widget class="QFrame" name="frame_12">
     <property name="geometry">
      <rect>
-      <x>920</x>
-      <y>360</y>
+      <x>980</x>
+      <y>280</y>
       <width>201</width>
       <height>201</height>
      </rect>
@@ -542,6 +542,204 @@ color: #F8F2EC;</string>
      </property>
      <property name="text">
       <string>Profile</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_15">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>500</y>
+      <width>201</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_20">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>10</y>
+       <width>121</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>icon_pack/icon_16.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="logout">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 15px;
+font: 600 16pt &quot;Bahnschrift&quot;;
+background-color:rgb(129, 201, 255);
+color: #F8F2EC;</string>
+     </property>
+     <property name="text">
+      <string>Đăng xuất</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_14">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>500</y>
+      <width>201</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_19">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>10</y>
+       <width>121</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>icon_pack/icon_14.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="attendance">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 15px;
+font: 600 16pt &quot;Bahnschrift&quot;;
+background-color:rgb(129, 201, 255);
+color: #F8F2EC;</string>
+     </property>
+     <property name="text">
+      <string>Điểm danh</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_16">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>500</y>
+      <width>201</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>10</y>
+       <width>121</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>icon_pack/icon_15.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="timetable">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 15px;
+font: 600 16pt &quot;Bahnschrift&quot;;
+background-color:rgb(129, 201, 255);
+color: #F8F2EC;</string>
+     </property>
+     <property name="text">
+      <string>Thời khoá biểu</string>
      </property>
     </widget>
    </widget>

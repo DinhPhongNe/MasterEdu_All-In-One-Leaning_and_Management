@@ -1,5 +1,5 @@
 from PyQt6.QtCore import Qt
-from PyQt6.QtWidgets import QMainWindow, QMessageBox, QTabWidget, QComboBox, QLineEdit, QTableWidget, QFileDialog, QDialog, QVBoxLayout, QPushButton, QLabel, QGridLayout, QTableWidgetItem
+from PyQt6.QtWidgets import QMainWindow, QMessageBox, QTabWidget, QComboBox, QLineEdit, QTableWidget, QDialog, QVBoxLayout, QPushButton, QLabel, QGridLayout, QTableWidgetItem, QListWidget
 from PyQt6 import uic
 import json
 from reportlab.pdfgen import canvas
@@ -8,6 +8,7 @@ from reportlab.lib.units import inch
 from student_grades import StudentGrades
 from view_assignments import ViewAssignments
 from assignment_upload import AssignmentUpload
+from menu_select_tc import MenuSelectTC
 
 class TeacherMain(QMainWindow, StudentGrades, ViewAssignments, AssignmentUpload):
     def __init__(self, data) -> None:
@@ -29,6 +30,7 @@ class TeacherMain(QMainWindow, StudentGrades, ViewAssignments, AssignmentUpload)
         self.clear_btn.clicked.connect(self.clear_information)
         self.xem_bai_tap.clicked.connect(self.show_xem_bai_tap_dialog)
         self.btvn_upload_btn.clicked.connect(self.upload_btvn)
+        self.logOut_btn_tc.clicked.connect(self.return_to_menu_tc)
 
         self.table = self.findChild(QTabWidget, "Semester_tab")
         self.tab_widget = self.findChild(QTabWidget, "Semester_tab")
@@ -106,7 +108,11 @@ class TeacherMain(QMainWindow, StudentGrades, ViewAssignments, AssignmentUpload)
         self.print_btn = self.findChild(QPushButton, "print_btn")
         self.print_btn.clicked.connect(self.print_table)
         
-
+    def return_to_menu_tc(self):
+        self.close()  # Đóng teacher_main
+        self.menu_tc = MenuSelectTC(self.data)  # Tạo lại menu select cho giáo viên
+        self.menu_tc.show()
+        
     def update_lop_combobox(self, text):
         self.chon_lop.clear()
         self.chon_lop.addItems(self.khoi_lop.get(text, []))
@@ -786,77 +792,85 @@ class TeacherMain(QMainWindow, StudentGrades, ViewAssignments, AssignmentUpload)
         self.sua_diem_dialog.close()
 
     def add_information(self):
-        if not self.chon_khoi.currentText() or not self.chon_lop.currentText():
-            self.msg_box.setText("Vui lòng chọn khối và lớp!")
+        if not self.ho.text() or not self.ten.text() or not self.lop.text() or not self.so_thu_tu.text():
+            self.msg_box.setText("Vui lòng nhập đầy đủ thông tin!")
             self.msg_box.exec()
             return
 
-        stt = self.stt.text()
+        # Lấy tên học sinh
+        ho = self.ho.text()
+        ten = self.ten.text()
+        ten_day_du = f"{ho} {ten}"
 
-        if not stt or len(stt) != 5 or not stt.isdigit() or int(stt[2:]) == 0:
-            self.msg_box.setText(
-                "Số thứ tự không hợp lệ. Vui lòng nhập theo định dạng 'Số lớp - Số thứ tự' (ví dụ: 88041)."
-            )
+        # Tìm kiếm học sinh dựa trên tên đầy đủ
+        matching_students = []
+        for student in self.data["Danh_sach_hoc_sinh"]:
+            if student.get("Họ", "") + " " + student.get("Tên", "") == ten_day_du:
+                matching_students.append(student)
+
+        # Hiển thị QDialog cho phép giáo viên chọn học sinh nếu có nhiều hơn 1 học sinh trùng tên
+        if len(matching_students) > 1:
+            chon_hoc_sinh_dialog = QDialog(self)
+            chon_hoc_sinh_dialog.setWindowTitle("Chọn học sinh")
+
+            layout = QVBoxLayout()
+            student_list = QListWidget()
+            for student in matching_students:
+                student_list.addItem(f"Họ và tên: {student.get('Họ', '')} {student.get('Tên', '')}, ID: {student['Thông tin tài khoản']['id_tai_khoan']}, Lớp: {student['Thông tin tài khoản']['grade']}{student['Thông tin tài khoản']['class_name']}")
+            layout.addWidget(student_list)
+
+            chon_btn = QPushButton("Chọn")
+            def chon_hoc_sinh():
+                selected_item = student_list.currentItem()
+                if selected_item:
+                    selected_student_id = int(selected_item.text().split("ID: ")[1].split(",")[0])
+                    for student in self.data["Danh_sach_hoc_sinh"]:
+                        if student["Thông tin tài khoản"]["id_tai_khoan"] == selected_student_id:
+                            self.dien_thong_tin_hoc_sinh(student)
+                            break
+                    chon_hoc_sinh_dialog.close()
+            chon_btn.clicked.connect(chon_hoc_sinh)
+            layout.addWidget(chon_btn)
+
+            chon_hoc_sinh_dialog.setLayout(layout)
+            chon_hoc_sinh_dialog.exec()
+
+        elif len(matching_students) == 1:
+            self.dien_thong_tin_hoc_sinh(matching_students[0])
+
+        else:
+            self.msg_box.setText("Không tìm thấy học sinh có tên này. Vui lòng kiểm tra lại hoặc yêu cầu học sinh đăng ký tài khoản.")
+            self.msg_box.exec()
+            
+    def dien_thong_tin_hoc_sinh(self, student):
+        lop = self.lop.text()
+        so_thu_tu = self.so_thu_tu.text()
+
+        # Kiểm tra định dạng lớp và số thứ tự
+        if not lop or len(lop) != 2 or not lop.isdigit():
+            self.msg_box.setText("Lớp không hợp lệ. Vui lòng nhập 2 chữ số.")
+            self.msg_box.exec()
+            return
+        if not so_thu_tu or not so_thu_tu.isdigit():
+            self.msg_box.setText("Số thứ tự không hợp lệ. Vui lòng nhập số.")
             self.msg_box.exec()
             return
 
-        new_student = {
-            "None": 0,
-            "Số thứ tự": stt,
-            "Họ": self.ho.text(),
-            "Tên": self.ten.text(),
-            "birthday": "",
-            "id_tai_khoan": int(stt), # Chuyển đổi stt thành số nguyên
-            "MK_tai_khoan": "123",
-            "so_thu_tu": "",
-            "so_dien_thoai": "",
-            "age": "",
-            "Điểm trong năm": {
-                "Học kỳ 1": {},
-                "Học kỳ 2": {}
-            },
-            "Điểm trung bình cả năm": {
-                "Học kỳ 1": {},
-                "Học kỳ 2": {}
-            }
-        }
+        # Cập nhật thông tin học sinh
+        student["Số thứ tự"] = f"{lop}{so_thu_tu}"
+        student["Thông tin tài khoản"]["grade"] = int(lop[0])
+        student["Thông tin tài khoản"]["class_name"] = int(lop)
+        student["Thông tin tài khoản"]["so_thu_tu"] = int(so_thu_tu)
+        student["Thông tin tài khoản"]["ten_tai_khoan"] = f"{student['Họ']} {student['Tên']}"
 
-        new_student["Điểm trung bình cả năm"] = {
-            "Học kỳ 1": {
-                subject: {"GK1": None, "HK1": None}
-                for subject in [
-                    "Toán",
-                    "Văn",
-                    "Anh",
-                    "Khoa học tự nhiên",
-                    "Lịch sử - địa lý",
-                    "Tin học",
-                    "Công nghệ",
-                    "Giáo dục công dân",
-                ]
-            },
-            "Học kỳ 2": {
-                subject: {"GK2": None, "HK2": None}
-                for subject in [
-                    "Toán",
-                    "Văn",
-                    "Anh",
-                    "Khoa học tự nhiên",
-                    "Lịch sử - địa lý",
-                    "Tin học",
-                    "Công nghệ",
-                    "Giáo dục công dân",
-                ]
-            },
-        }
-
-        self.data["Danh_sach_hoc_sinh"].append(new_student)
-        self.chon_hs_combo.addItem(f"{new_student['Họ']} {new_student['Tên']}")
         self.save_data()
         self.fill_tables()
-        self.stt.clear()
+
         self.ho.clear()
         self.ten.clear()
+        self.lop.clear()
+        self.so_thu_tu.clear()
+
 
     def update_subject_combobox(self):
         if self.current_teacher_table is self.table_HK1:

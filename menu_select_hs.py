@@ -24,7 +24,9 @@ class MenuSelectHS(QMainWindow):
         self.achievement.clicked.connect(self.show_coming_soon)
         self.profile_setting.clicked.connect(self.show_coming_soon)
         self.homework.clicked.connect(self.show_coming_soon)
+        self.timetable.clicked.connect(self.show_coming_soon)
         self.attendance.clicked.connect(self.show_coming_soon)
+        self.logout.clicked.connect(self.show_coming_soon)
 
     def open_student_main(self):
         from student_main import StudentMain

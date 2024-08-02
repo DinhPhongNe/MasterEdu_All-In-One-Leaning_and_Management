@@ -13,13 +13,14 @@ class MenuSelectTC(QMainWindow):
 
         # Kết nối các nút bấm với hàm show_coming_soon
         self.school_notification.clicked.connect(self.show_coming_soon)
-        self.learning_plan.clicked.connect(self.show_coming_soon)
         self.tutor.clicked.connect(self.show_coming_soon)
         self.learning_material_management.clicked.connect(self.show_coming_soon)
         self.join_club.clicked.connect(self.show_coming_soon)
         self.ai_ask.clicked.connect(self.show_coming_soon)
         self.library.clicked.connect(self.show_coming_soon)
         self.profile_setting.clicked.connect(self.show_coming_soon)
+        self.logout.clicked.connect(self.show_coming_soon)
+
         
 
     def open_teacher_main(self):

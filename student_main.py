@@ -3,6 +3,7 @@ from PyQt6.QtWidgets import QMainWindow, QMessageBox, QTabWidget, QComboBox, QTa
 from PyQt6 import uic
 from student_grades import StudentGrades
 from view_assignments import ViewAssignments
+from menu_select_hs import MenuSelectHS
 
 class StudentMain(QMainWindow, StudentGrades, ViewAssignments):
     def __init__(self, data, tai_khoan) -> None:
@@ -43,6 +44,7 @@ class StudentMain(QMainWindow, StudentGrades, ViewAssignments):
         # Sửa lỗi: Loại bỏ self.student_main.
         self.logOut_btn_tc.clicked.connect(self.logout)
         self.xem_bai_tap_hs.clicked.connect(self.show_xem_bai_tap_dialog)
+        self.logOut_btn_tc.clicked.connect(self.return_to_menu_hs)
 
         self.tab_widget_hs.currentChanged.connect(self.on_tab_changed_hs)
         self.on_tab_changed_hs(self.tab_widget_hs.currentIndex())
@@ -86,6 +88,11 @@ class StudentMain(QMainWindow, StudentGrades, ViewAssignments):
             self.msg_box.setText("Hệ thống đang lỗi, xin vui lòng thử lại sau")
             self.msg_box.exec()
 
+    def return_to_menu_hs(self):
+        self.close()  # Đóng student_main
+        self.menu_hs = MenuSelectHS(self.data, self.tai_khoan)  # Tạo lại menu select cho học sinh
+        self.menu_hs.show()
+        
     def fill_tables_hs(self):
         self.table_HK1_hs.setRowCount(0)
         self.table_HK2_hs.setRowCount(0)
