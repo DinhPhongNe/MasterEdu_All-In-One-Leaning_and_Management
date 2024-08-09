@@ -2,6 +2,7 @@ from PyQt6.QtWidgets import QMainWindow
 from PyQt6 import uic
 from PyQt6.QtCore import QTimer
 from coming_soon import ComingSoon
+from profile_hs import ProfileHS
 
 class MenuSelectHS(QMainWindow):
     def __init__(self, data, tai_khoan):
@@ -22,7 +23,7 @@ class MenuSelectHS(QMainWindow):
         self.library.clicked.connect(self.show_coming_soon)
         self.ranking.clicked.connect(self.show_coming_soon)
         self.achievement.clicked.connect(self.show_coming_soon)
-        self.profile_setting.clicked.connect(self.show_coming_soon)
+        self.profile_setting.clicked.connect(self.open_profile_hs)
         self.homework.clicked.connect(self.show_coming_soon)
         self.timetable.clicked.connect(self.show_coming_soon)
         self.attendance.clicked.connect(self.show_coming_soon)
@@ -32,8 +33,19 @@ class MenuSelectHS(QMainWindow):
         from student_main import StudentMain
         self.student_main = StudentMain(self.data, self.tai_khoan)
         self.student_main.show()
+
+    def open_profile_hs(self):
+        self.profile_hs = ProfileHS(self.data, self.tai_khoan)
+
+        # Kết nối tín hiệu finished với slot close_menu sau khi ProfileHS được tạo
+        self.profile_hs.achievement_monitor.finished.connect(self.close_menu)  
+
+        self.profile_hs.show()
         self.close()
 
+    def close_menu(self):
+        self.close()  # Đóng cửa sổ MenuSelectHS sau khi thread watchdog kết thúc
+        
     def show_coming_soon(self):
         if not self.coming_soon:
             self.coming_soon = ComingSoon()

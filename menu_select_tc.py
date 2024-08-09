@@ -2,7 +2,7 @@ from PyQt6.QtWidgets import QMainWindow
 from PyQt6 import uic
 from PyQt6.QtCore import QTimer
 from coming_soon import ComingSoon
-
+from profile_tc import ProfileTC
 class MenuSelectTC(QMainWindow):
     def __init__(self, data):
         super().__init__()
@@ -18,7 +18,7 @@ class MenuSelectTC(QMainWindow):
         self.join_club.clicked.connect(self.show_coming_soon)
         self.ai_ask.clicked.connect(self.show_coming_soon)
         self.library.clicked.connect(self.show_coming_soon)
-        self.profile_setting.clicked.connect(self.show_coming_soon)
+        self.profile_setting.clicked.connect(self.open_profile_tc)
         self.logout.clicked.connect(self.show_coming_soon)
 
         
@@ -28,7 +28,11 @@ class MenuSelectTC(QMainWindow):
         self.teacher_main = TeacherMain(self.data)
         self.teacher_main.show()
         self.close()
-
+    def open_profile_tc(self):
+        self.profile_tc = ProfileTC(self.data)
+        self.profile_tc.show()
+        self.close()
+        
     def show_coming_soon(self):
         if not self.coming_soon:
             self.coming_soon = ComingSoon()

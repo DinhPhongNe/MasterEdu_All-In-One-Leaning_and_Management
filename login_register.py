@@ -472,30 +472,36 @@ class LoginRegister(QMainWindow):
         self.hide()
 
     def check_login_hs(self):
-        id_tai_khoan = self.student_login.id_hs.text()
-        mat_khau = self.student_login.pass_HS.text()
-
         try:
-            with open("diem_database.json", "r", encoding="utf-8") as f:
-                tk_hs_data = json.load(f)
-        except FileNotFoundError:
-            self.msg_box.setText("Không tìm thấy file diem_database.json")
-            self.msg_box.exec()
-            return
+            id_tai_khoan = self.student_login.id_hs.text()
+            mat_khau = self.student_login.pass_HS.text()
 
-        # Duyệt qua danh sách học sinh và kiểm tra thông tin tài khoản
-        for hoc_sinh in tk_hs_data.get("Danh_sach_hoc_sinh", []):
-            thong_tin_tai_khoan = hoc_sinh.get("Thông tin tài khoản", {})
-            if (
-                str(thong_tin_tai_khoan.get("id_tai_khoan", "")) == id_tai_khoan
-                and str(thong_tin_tai_khoan.get("MK_tai_khoan", "")) == mat_khau
-            ):
-                self.student_login.close()
-                self.open_student_select_menu(hoc_sinh)
+            try:
+                with open("diem_database.json", "r", encoding="utf-8") as f:
+                    tk_hs_data = json.load(f)
+            except FileNotFoundError:
+                self.msg_box.setText("Không tìm thấy file diem_database.json")
+                self.msg_box.exec()
                 return
 
-        self.msg_box.setText("Sai ID tài khoản hoặc mật khẩu!")
-        self.msg_box.exec()
+            # Duyệt qua danh sách học sinh và kiểm tra thông tin tài khoản
+            for hoc_sinh in tk_hs_data.get("Danh_sach_hoc_sinh", []):
+                thong_tin_tai_khoan = hoc_sinh.get("Thông tin tài khoản", {})
+                if (
+                    str(thong_tin_tai_khoan.get("id_tai_khoan", "")) == id_tai_khoan
+                    and str(thong_tin_tai_khoan.get("MK_tai_khoan", "")) == mat_khau
+                ):
+                    self.student_login.close()
+                    self.open_student_select_menu(hoc_sinh)
+                    return
+
+            self.msg_box.setText("Sai ID tài khoản hoặc mật khẩu!")
+            self.msg_box.exec()
+
+        except Exception as e:
+            import traceback
+            print(f"Lỗi trong check_login_hs: {traceback.format_exc()}")
+
 
     def open_student_select_menu(self, tai_khoan):
         from menu_select_hs import MenuSelectHS

@@ -2,3 +2,5 @@ reportlab
 python-vlc
 opencv-python
 PyQt6
+simpleaudio
+watchdog

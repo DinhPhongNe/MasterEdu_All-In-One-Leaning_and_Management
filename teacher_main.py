@@ -10,6 +10,7 @@ from view_assignments import ViewAssignments
 from assignment_upload import AssignmentUpload
 from menu_select_tc import MenuSelectTC
 
+
 class TeacherMain(QMainWindow, StudentGrades, ViewAssignments, AssignmentUpload):
     def __init__(self, data) -> None:
         super().__init__()

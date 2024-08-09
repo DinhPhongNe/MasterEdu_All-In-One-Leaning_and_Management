@@ -20,7 +20,7 @@ class StudentMain(QMainWindow, StudentGrades, ViewAssignments):
         self.msg_box.setWindowTitle("Lỗi")
         self.msg_box.setIcon(QMessageBox.Icon.Warning)
         self.msg_box.setStyleSheet("background-color: #F8F2EC; color: #356a9c")
-
+        
         self.tab_widget_hs = self.findChild(QTabWidget, "Semester_tab_hs")
         self.table_HK1_hs = self.findChild(QTableWidget, "student_Infor_table_HK1_hs")
         self.table_HK2_hs = self.findChild(QTableWidget, "student_Infor_table_HK2_hs")
@@ -92,7 +92,7 @@ class StudentMain(QMainWindow, StudentGrades, ViewAssignments):
         self.close()  # Đóng student_main
         self.menu_hs = MenuSelectHS(self.data, self.tai_khoan)  # Tạo lại menu select cho học sinh
         self.menu_hs.show()
-        
+
     def fill_tables_hs(self):
         self.table_HK1_hs.setRowCount(0)
         self.table_HK2_hs.setRowCount(0)
