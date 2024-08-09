@@ -1,0 +1,1392 @@
+{
+    "Danh sách thành tựu":{
+        "Thành tựu không ẩn": {
+            "Study hard level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Học tập chăm chỉ - cấp 1",
+                "achievement_name": "Học tập chăm chỉ",
+                "achievement_images": "./achievement_icon/23.png",
+                "achievement_desc": "Bạn đã hoàn thành 10 bài tập trên MasterEdu",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "Study hard level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Học tập chăm chỉ - cấp 2",
+                "achievement_name": "Học tập chăm chỉ",
+                "achievement_images": "./achievement_icon/31.png",
+                "achievement_desc": "Bạn đã hoàn thành 50 bài tập trên MasterEdu",
+                "difficult_rate": "3/10",
+                "status": "không ẩn"
+            },
+            "Study hard level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Học tập chăm chỉ - cấp 3",
+                "achievement_name": "Học tập chăm chỉ",
+                "achievement_images": "./achievement_icon/11.png",
+                "achievement_desc": "Bạn đã hoàn thành 100 bài tập trên MasterEdu",
+                "difficult_rate": "4/10",
+                "status": "không ẩn"
+            },
+            "Study hard level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Học tập chăm chỉ - cấp 4",
+                "achievement_name": "Học tập chăm chỉ",
+                "achievement_images": "./achievement_icon/3.png",
+                "achievement_desc": "Bạn đã hoàn thành 250 bài tập trên MasterEdu",
+                "difficult_rate": "6/10",
+                "status": "không ẩn"
+            },
+            "Study hard level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Học tập chăm chỉ - cấp 5",
+                "achievement_name": "Học tập chăm chỉ",
+                "achievement_images": "./achievement_icon/10.png",
+                "achievement_desc": "Bạn đã hoàn thành 500 bài tập trên MasterEdu",
+                "difficult_rate": "8/10",
+                "status": "không ẩn"
+            },
+            "Knowledge Discovery level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Khám phá tri thức - cấp 1",
+                "achievement_name": "Khám phá tri thức",
+                "achievement_images": "./achievement_icon/14.png",
+                "achievement_desc": "Bạn đã xem 10 video bài giảng trên MasterEdu",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "Knowledge Discovery level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Khám phá tri thức - cấp 2",
+                "achievement_name": "Khám phá tri thức",
+                "achievement_images": "./achievement_icon/20.png",
+                "achievement_desc": "Bạn đã xem 25 video bài giảng trên MasterEdu",
+                "difficult_rate": "3/10",
+                "status": "không ẩn"
+            },
+            "Knowledge Discovery level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Khám phá tri thức - cấp 3",
+                "achievement_name": "Khám phá tri thức",
+                "achievement_images": "./achievement_icon/21.png",
+                "achievement_desc": "Bạn đã xem 50 video bài giảng trên MasterEdu",
+                "difficult_rate": "4/10",
+                "status": "không ẩn"
+            },
+            "Knowledge Discovery level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Khám phá tri thức - cấp 4",
+                "achievement_name": "Khám phá tri thức",
+                "achievement_images": "./achievement_icon/28.png",
+                "achievement_desc": "Bạn đã xem 100 video bài giảng trên MasterEdu",
+                "difficult_rate": "6/10",
+                "status": "không ẩn"
+            },
+            "Knowledge Discovery level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Khám phá tri thức - cấp 5",
+                "achievement_name": "Khám phá tri thức",
+                "achievement_images": "./achievement_icon/2.png",
+                "achievement_desc": "Bạn đã xem 200 video bài giảng trên MasterEdu",
+                "difficult_rate": "8/10",
+                "status": "không ẩn"
+            },
+            "Self-learning Spirit level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tinh thần tự học - cấp 1",
+                "achievement_name": "Tinh thần tự học",
+                "achievement_images": "./achievement_icon/8.png",
+                "achievement_desc": "Bạn đã đăng nhập 7 ngày liên tiếp trên MasterEdu",
+                "difficult_rate": "1/10",
+                "status": "không ẩn"
+            },
+            "Self-learning Spirit level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tinh thần tự học - cấp 2",
+                "achievement_name": "Tinh thần tự học",
+                "achievement_images": "./achievement_icon/27.png",
+                "achievement_desc": "Bạn đã đăng nhập 14 ngày liên tiếp trên MasterEdu",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "Self-learning Spirit level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tinh thần tự học - cấp 3",
+                "achievement_name": "Tinh thần tự học",
+                "achievement_images": "./achievement_icon/37.png",
+                "achievement_desc": "Bạn đã đăng nhập 30 ngày liên tiếp trên MasterEdu",
+                "difficult_rate": "4/10",
+                "status": "không ẩn"
+            },
+            "Self-learning Spirit level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tinh thần tự học - cấp 4",
+                "achievement_name": "Tinh thần tự học",
+                "achievement_images": "./achievement_icon/35.png",
+                "achievement_desc": "Bạn đã đăng nhập 60 ngày liên tiếp trên MasterEdu",
+                "difficult_rate": "6/10",
+                "status": "không ẩn"
+            },
+            "Self-learning Spirit level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tinh thần tự học - cấp 5",
+                "achievement_name": "Tinh thần tự học",
+                "achievement_images": "./achievement_icon/33.png",
+                "achievement_desc": "Bạn đã đăng nhập 100 ngày liên tiếp trên MasterEdu",
+                "difficult_rate": "8/10",
+                "status": "không ẩn"
+            },
+            "Remember the Teacher level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Bậc thầy ghi nhớ - cấp 1",
+                "achievement_name": "Bậc thầy ghi nhớ",
+                "achievement_images": "./achievement_icon/12.png",
+                "achievement_desc": "Bạn đã sử dụng nhật kí 7 ngày liên tiếp trên MasterEdu",
+                "difficult_rate": "1/10",
+                "status": "không ẩn"
+            },
+            "Remember the Teacher level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Bậc thầy ghi nhớ - cấp 2",
+                "achievement_name": "Bậc thầy ghi nhớ",
+                "achievement_images": "./achievement_icon/4.png",
+                "achievement_desc": "Bạn đã sử dụng nhật kí 14 ngày liên tiếp trên MasterEdu",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "Remember the Teacher level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Bậc thầy ghi nhớ - cấp 3",
+                "achievement_name": "Bậc thầy ghi nhớ",
+                "achievement_images": "./achievement_icon/16.png",
+                "achievement_desc": "Bạn đã sử dụng nhật kí 30 ngày liên tiếp trên MasterEdu",
+                "difficult_rate": "4/10",
+                "status": "không ẩn"
+            },
+            "Remember the Teacher level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Bậc thầy ghi nhớ - cấp 4",
+                "achievement_name": "Bậc thầy ghi nhớ",
+                "achievement_images": "./achievement_icon/9.png",
+                "achievement_desc": "Bạn đã sử dụng nhật kí 60 ngày liên tiếp trên MasterEdu",
+                "difficult_rate": "6/10",
+                "status": "không ẩn"
+            },
+            "Remember the Teacher level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Bậc thầy ghi nhớ - cấp 5",
+                "achievement_name": "Bậc thầy ghi nhớ",
+                "achievement_images": "./achievement_icon/32.png",
+                "achievement_desc": "Bạn đã sử dụng nhật kí 100 ngày liên tiếp trên MasterEdu",
+                "difficult_rate": "8/10",
+                "status": "không ẩn"
+            },
+            "Perfect Plan level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Kế hoạch hoàn hảo - cấp 1",
+                "achievement_name": "Kế hoạch hoàn hảo",
+                "achievement_images": "./achievement_icon/17.png",
+                "achievement_desc": "Bạn đã tạo 5 và hoàn thành 10 kế hoạch đúng hạn",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "Perfect Plan level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Kế hoạch hoàn hảo - cấp 2",
+                "achievement_name": "Kế hoạch hoàn hảo",
+                "achievement_images": "./achievement_icon/1.png",
+                "achievement_desc": "Bạn đã tạo 10 và hoàn thành 20 kế hoạch đúng hạn",
+                "difficult_rate": "4/10",
+                "status": "không ẩn"
+            },
+            "Perfect Plan level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Kế hoạch hoàn hảo - cấp 3",
+                "achievement_name": "Kế hoạch hoàn hảo",
+                "achievement_images": "./achievement_icon/24.png",
+                "achievement_desc": "Bạn đã tạo 20 và hoàn thành 40 kế hoạch đúng hạn",
+                "difficult_rate": "6/10",
+                "status": "không ẩn"
+            },
+            "Perfect Plan level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Kế hoạch hoàn hảo - cấp 4",
+                "achievement_name": "Kế hoạch hoàn hảo",
+                "achievement_images": "./achievement_icon/26.png",
+                "achievement_desc": "Bạn đã tạo 30 và hoàn thành 60 kế hoạch đúng hạn",
+                "difficult_rate": "7/10",
+                "status": "không ẩn"
+            },
+            "Perfect Plan level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Kế hoạch hoàn hảo - cấp 5",
+                "achievement_name": "Kế hoạch hoàn hảo",
+                "achievement_images": "./achievement_icon/22.png",
+                "achievement_desc": "Bạn đã tạo 50 và hoàn thành 100 kế hoạch đúng hạn",
+                "difficult_rate": "9/10",
+                "status": "không ẩn"
+            },
+            "Learning from friends level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Học hỏi bạn bè - cấp 1",
+                "achievement_name": "Học hỏi bạn bè",
+                "achievement_images": "./achievement_icon/15.png",
+                "achievement_desc": "Bạn đã tham gia 1 nhóm học tập và gửi 10 tin nhắn",
+                "difficult_rate": "1/10",
+                "status": "không ẩn"
+            },
+            "Learning from friends level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Học hỏi bạn bè - cấp 2",
+                "achievement_name": "Học hỏi bạn bè",
+                "achievement_images": "./achievement_icon/5.png",
+                "achievement_desc": "Bạn đã tham gia 3 nhóm học tập và gửi 30 tin nhắn",
+                "difficult_rate": "3/10",
+                "status": "không ẩn"
+            },
+            "Learning from friends level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Học hỏi bạn bè - cấp 3",
+                "achievement_name": "Học hỏi bạn bè",
+                "achievement_images": "./achievement_icon/18.png",
+                "achievement_desc": "Bạn đã tham gia 5 nhóm học tập và gửi 50 tin nhắn",
+                "difficult_rate": "5/10",
+                "status": "không ẩn"
+            },
+            "Learning from friends level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Học hỏi bạn bè - cấp 4",
+                "achievement_name": "Học hỏi bạn bè",
+                "achievement_images": "./achievement_icon/7.png",
+                "achievement_desc": "Bạn đã tham gia 7 nhóm học tập và gửi 70 tin nhắn",
+                "difficult_rate": "7/10",
+                "status": "không ẩn"
+            },
+            "Learning from friends level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Học hỏi bạn bè - cấp 5",
+                "achievement_name": "Học hỏi bạn bè",
+                "achievement_images": "./achievement_icon/13.png",
+                "achievement_desc": "Bạn đã tham gia 10 nhóm học tập và gửi 100 tin nhắn",
+                "difficult_rate": "9/10",
+                "status": "không ẩn"
+            },
+            "Spirit of cooperation level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tinh thần hợp tác - cấp 1",
+                "achievement_name": "Tinh thần hợp tác",
+                "achievement_images": "./achievement_icon/34.png",
+                "achievement_desc": "Bạn đã chia sẻ 1 tài liệu học tập và nhận 5 lượt cảm ơn từ bạn bè",
+                "difficult_rate": "1/10",
+                "status": "không ẩn"
+            },
+            "Spirit of cooperation level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tinh thần hợp tác - cấp 2",
+                "achievement_name": "Tinh thần hợp tác",
+                "achievement_images": "./achievement_icon/6.png",
+                "achievement_desc": "Bạn đã chia sẻ 5 tài liệu học tập và nhận 25 lượt cảm ơn từ bạn bè",
+                "difficult_rate": "3/10",
+                "status": "không ẩn"
+            },
+            "Spirit of cooperation level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tinh thần hợp tác - cấp 3",
+                "achievement_name": "Tinh thần hợp tác",
+                "achievement_images": "./achievement_icon/29.png",
+                "achievement_desc": "Bạn đã chia sẻ 10 tài liệu học tập và nhận 50 lượt cảm ơn từ bạn bè",
+                "difficult_rate": "5/10",
+                "status": "không ẩn"
+            },
+            "Spirit of cooperation level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tinh thần hợp tác - cấp 4",
+                "achievement_name": "Tinh thần hợp tác",
+                "achievement_images": "./achievement_icon/25.png",
+                "achievement_desc": "Bạn đã chia sẻ 25 tài liệu học tập và nhận 100 lượt cảm ơn từ bạn bè",
+                "difficult_rate": "7/10",
+                "status": "không ẩn"
+            },
+            "Spirit of cooperation level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tinh thần hợp tác - cấp 5",
+                "achievement_name": "Tinh thần hợp tác",
+                "achievement_images": "./achievement_icon/36.png",
+                "achievement_desc": "Bạn đã chia sẻ 50 tài liệu học tập và nhận 250 lượt cảm ơn từ bạn bè",
+                "difficult_rate": "9/10",
+                "status": "không ẩn"
+            },
+            "A real book level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Mọt sách chính hiệu - cấp 1",
+                "achievement_name": "Mọt sách chính hiệu",
+                "achievement_images": "./achievement_icon/30.png",
+                "achievement_desc": "Bạn đã mượn 1 cuốn sách từ thư viện của trường và đọc hết 5 cuốn",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "A real book level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Mọt sách chính hiệu - cấp 2",
+                "achievement_name": "Mọt sách chính hiệu",
+                "achievement_images": "./achievement_icon/19.png",
+                "achievement_desc": "Bạn đã mượn 5 cuốn sách từ thư viện của trường và đọc hết 10 cuốn",
+                "difficult_rate": "4/10",
+                "status": "không ẩn"
+            },
+            "A real book level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Mọt sách chính hiệu - cấp 3",
+                "achievement_name": "Mọt sách chính hiệu",
+                "achievement_images": "./achievement_icon/1.png",
+                "achievement_desc": "Bạn đã mượn 10 cuốn sách từ thư viện của trường và đọc hết 20 cuốn",
+                "difficult_rate": "6/10",
+                "status": "không ẩn"
+            },
+            "A real book level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Mọt sách chính hiệu - cấp 4",
+                "achievement_name": "Mọt sách chính hiệu",
+                "achievement_images": "./achievement_icon/22.png",
+                "achievement_desc": "Bạn đã mượn 20 cuốn sách từ thư viện của trường và đọc hết 40 cuốn",
+                "difficult_rate": "7/10",
+                "status": "không ẩn"
+            },
+            "A real book level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Mọt sách chính hiệu - cấp 5",
+                "achievement_name": "Mọt sách chính hiệu",
+                "achievement_images": "./achievement_icon/3.png",
+                "achievement_desc": "Bạn đã mượn 50 cuốn sách từ thư viện của trường và đọc hết 100 cuốn",
+                "difficult_rate": "9/10",
+                "status": "không ẩn"
+            },
+            "Join the club level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tham gia câu lạc bộ - cấp 1",
+                "achievement_name": "Tham gia câu lạc bộ",
+                "achievement_images": "./achievement_icon/37.png",
+                "achievement_desc": "Bạn đã tham gia 1 câu lạc bộ và 5 hoạt động của câu lạc bộ",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "Join the club level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tham gia câu lạc bộ - cấp 2",
+                "achievement_name": "Tham gia câu lạc bộ",
+                "achievement_images": "./achievement_icon/15.png",
+                "achievement_desc": "Bạn đã tham gia 2 câu lạc bộ và 10 hoạt động của câu lạc bộ",
+                "difficult_rate": "4/10",
+                "status": "không ẩn"
+            },
+            "Join the club level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tham gia câu lạc bộ - cấp 3",
+                "achievement_name": "Tham gia câu lạc bộ",
+                "achievement_images": "./achievement_icon/36.png",
+                "achievement_desc": "Bạn đã tham gia 3 câu lạc bộ và 15 hoạt động của câu lạc bộ",
+                "difficult_rate": "6/10",
+                "status": "không ẩn"
+            },
+            "Join the club level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tham gia câu lạc bộ - cấp 4",
+                "achievement_name": "Tham gia câu lạc bộ",
+                "achievement_images": "./achievement_icon/20.png",
+                "achievement_desc": "Bạn đã tham gia 4 câu lạc bộ và 20 hoạt động của câu lạc bộ",
+                "difficult_rate": "7/10",
+                "status": "không ẩn"
+            },
+            "Join the club level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tham gia câu lạc bộ - cấp 5",
+                "achievement_name": "Tham gia câu lạc bộ",
+                "achievement_images": "./achievement_icon/3.png",
+                "achievement_desc": "Bạn đã tham gia 5 câu lạc bộ và 25 hoạt động của câu lạc bộ",
+                "difficult_rate": "9/10",
+                "status": "không ẩn"
+            },
+            "Spirit of progress level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tinh thần cầu tiến - cấp 1",
+                "achievement_name": "Tinh thần cầu tiến",
+                "achievement_images": "./achievement_icon/19.png",
+                "achievement_desc": "Bạn đã đặt 1 câu hỏi cho giáo viên và nhận 5 trả lời",
+                "difficult_rate": "1/10",
+                "status": "không ẩn"
+            },
+            "Spirit of progress level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tinh thần cầu tiến - cấp 2",
+                "achievement_name": "Tinh thần cầu tiến",
+                "achievement_images": "./achievement_icon/30.png",
+                "achievement_desc": "Bạn đã đặt 3 câu hỏi cho giáo viên và nhận 15 trả lời",
+                "difficult_rate": "3/10",
+                "status": "không ẩn"
+            },
+            "Spirit of progress level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tinh thần cầu tiến - cấp 3",
+                "achievement_name": "Tinh thần cầu tiến",
+                "achievement_images": "./achievement_icon/11.png",
+                "achievement_desc": "Bạn đã đặt 5 câu hỏi cho giáo viên và nhận 25 trả lời",
+                "difficult_rate": "5/10",
+                "status": "không ẩn"
+            },
+            "Spirit of progress level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tinh thần cầu tiến - cấp 4",
+                "achievement_name": "Tinh thần cầu tiến",
+                "achievement_images": "./achievement_icon/35.png",
+                "achievement_desc": "Bạn đã đặt 7 câu hỏi cho giáo viên và nhận 35 trả lời",
+                "difficult_rate": "7/10",
+                "status": "không ẩn"
+            },
+            "Spirit of progress level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tinh thần cầu tiến - cấp 5",
+                "achievement_name": "Tinh thần cầu tiến",
+                "achievement_images": "./achievement_icon/26.png",
+                "achievement_desc": "Bạn đã đặt 10 câu hỏi cho giáo viên và nhận 50 trả lời",
+                "difficult_rate": "9/10",
+                "status": "không ẩn"
+            },
+            "Unlimited skills level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Kỹ năng vô biên - cấp 1",
+                "achievement_name": "Kỹ năng vô biên",
+                "achievement_images": "./achievement_icon/23.png",
+                "achievement_desc": "Bạn đã tham gia 1 bài và đạt kết quả tốt",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "Unlimited skills level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Kỹ năng vô biên - cấp 2",
+                "achievement_name": "Kỹ năng vô biên",
+                "achievement_images": "./achievement_icon/10.png",
+                "achievement_desc": "Bạn đã tham gia 2 bài và đạt kết quả tốt ở 2 bài",
+                "difficult_rate": "4/10",
+                "status": "không ẩn"
+            },
+            "Unlimited skills level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Kỹ năng vô biên - cấp 3",
+                "achievement_name": "Kỹ năng vô biên",
+                "achievement_images": "./achievement_icon/25.png",
+                "achievement_desc": "Bạn đã tham gia 3 bài và đạt kết quả tốt ở 3 bài",
+                "difficult_rate": "6/10",
+                "status": "không ẩn"
+            },
+            "Unlimited skills level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Kỹ năng vô biên - cấp 4",
+                "achievement_name": "Kỹ năng vô biên",
+                "achievement_images": "./achievement_icon/8.png",
+                "achievement_desc": "Bạn đã tham gia 5 bài và đạt kết quả tốt ở 5 bài",
+                "difficult_rate": "7/10",
+                "status": "không ẩn"
+            },
+            "Unlimited skills level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Kỹ năng vô biên - cấp 5",
+                "achievement_name": "Kỹ năng vô biên",
+                "achievement_images": "./achievement_icon/17.png",
+                "achievement_desc": "Bạn đã tham gia 7 bài và đạt kết quả tốt ở 7 bài, đồng thời cải thiện và xếp hạng cao trong bảng xếp hạng",
+                "difficult_rate": "7/10",
+                "status": "không ẩn"
+            },
+            "What is procrastination? level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Trì hoãn là gì? - cấp 1",
+                "achievement_name": "Trì hoãn là gì?",
+                "achievement_images": "./achievement_icon/29.png",
+                "achievement_desc": "Bạn đã hoàn thành 5 bài tập trước thời hạn",
+                "difficult_rate": "1/10",
+                "status": "không ẩn"
+            },
+            "What is procrastination? level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Trì hoãn là gì? - cấp 2",
+                "achievement_name": "Trì hoãn là gì?",
+                "achievement_images": "./achievement_icon/27.png",
+                "achievement_desc": "Bạn đã hoàn thành 10 bài tập trước thời hạn",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "What is procrastination? level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Trì hoãn là gì? - cấp 3",
+                "achievement_name": "Trì hoãn là gì?",
+                "achievement_images": "./achievement_icon/14.png",
+                "achievement_desc": "Bạn đã hoàn thành 15 bài tập trước thời hạn",
+                "difficult_rate": "4/10",
+                "status": "không ẩn"
+            },
+            "What is procrastination? level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Trì hoãn là gì? - cấp 4",
+                "achievement_name": "Trì hoãn là gì?",
+                "achievement_images": "./achievement_icon/2.png",
+                "achievement_desc": "Bạn đã hoàn thành 25 bài tập trước thời hạn",
+                "difficult_rate": "6/10",
+                "status": "không ẩn"
+            },
+            "What is procrastination? level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Trì hoãn là gì? - cấp 5",
+                "achievement_name": "Trì hoãn là gì?",
+                "achievement_images": "./achievement_icon/21.png",
+                "achievement_desc": "Bạn đã hoàn thành 50 bài tập trước thời hạn",
+                "difficult_rate": "8/10",
+                "status": "không ẩn"
+            },
+            "Burning the language barrier level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Đốt cháy rào cản ngôn ngữ - cấp 1",
+                "achievement_name": "Đốt cháy rào cản ngôn ngữ",
+                "achievement_images": "./achievement_icon/18.png",
+                "achievement_desc": "Bạn đã hoàn thành 5 bài tập tiếng Anh",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "Burning the language barrier level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Đốt cháy rào cản ngôn ngữ - cấp 2",
+                "achievement_name": "Đốt cháy rào cản ngôn ngữ",
+                "achievement_images": "./achievement_icon/12.png",
+                "achievement_desc": "Bạn đã hoàn thành 10 bài tập tiếng Anh",
+                "difficult_rate": "3/10",
+                "status": "không ẩn"
+            },
+            "Burning the language barrier level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Đốt cháy rào cản ngôn ngữ - cấp 3",
+                "achievement_name": "Đốt cháy rào cản ngôn ngữ",
+                "achievement_images": "./achievement_icon/28.png",
+                "achievement_desc": "Bạn đã hoàn thành 25 bài tập tiếng Anh",
+                "difficult_rate": "4/10",
+                "status": "không ẩn"
+            },
+            "Burning the language barrier level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Đốt cháy rào cản ngôn ngữ - cấp 4",
+                "achievement_name": "Đốt cháy rào cản ngôn ngữ",
+                "achievement_images": "./achievement_icon/32.png",
+                "achievement_desc": "Bạn đã hoàn thành 50 bài tập tiếng Anh",
+                "difficult_rate": "6/10",
+                "status": "không ẩn"
+            },
+            "Burning the language barrier level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Đốt cháy rào cản ngôn ngữ - cấp 5",
+                "achievement_name": "Đốt cháy rào cản ngôn ngữ",
+                "achievement_images": "./achievement_icon/25.png",
+                "achievement_desc": "Bạn đã hoàn thành 100 bài tập tiếng Anh",
+                "difficult_rate": "8/10",
+                "status": "không ẩn"
+            },
+            "Fluent in mother tongue level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thành thạo tiếng mẹ đẻ - cấp 1",
+                "achievement_name": "Thành thạo tiếng mẹ đẻ",
+                "achievement_images": "./achievement_icon/16.png",
+                "achievement_desc": "Bạn đã hoàn thành 5 bài tập tiếng Việt",
+                "difficult_rate": "1/10",
+                "status": "không ẩn"
+            },
+            "Fluent in mother tongue level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thành thạo tiếng mẹ đẻ - cấp 2",
+                "achievement_name": "Thành thạo tiếng mẹ đẻ",
+                "achievement_images": "./achievement_icon/31.png",
+                "achievement_desc": "Bạn đã hoàn thành 10 bài tập tiếng Việt",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "Fluent in mother tongue level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thành thạo tiếng mẹ đẻ - cấp 3",
+                "achievement_name": "Thành thạo tiếng mẹ đẻ",
+                "achievement_images": "./achievement_icon/13.png",
+                "achievement_desc": "Bạn đã hoàn thành 25 bài tập tiếng Việt",
+                "difficult_rate": "4/10",
+                "status": "không ẩn"
+            },
+            "Fluent in mother tongue level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thành thạo tiếng mẹ đẻ - cấp 4",
+                "achievement_name": "Thành thạo tiếng mẹ đẻ",
+                "achievement_images": "./achievement_icon/34.png",
+                "achievement_desc": "Bạn đã hoàn thành 50 bài tập tiếng Việt",
+                "difficult_rate": "6/10",
+                "status": "không ẩn"
+            },
+            "Fluent in mother tongue level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thành thạo tiếng mẹ đẻ - cấp 5",
+                "achievement_name": "Thành thạo tiếng mẹ đẻ",
+                "achievement_images": "./achievement_icon/17.png",
+                "achievement_desc": "Bạn đã hoàn thành 100 bài tập tiếng Việt",
+                "difficult_rate": "8/10",
+                "status": "không ẩn"
+            },
+            "No need for a computer level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Khỏi cần máy tính - cấp 1",
+                "achievement_name": "Khỏi cần máy tính",
+                "achievement_images": "./achievement_icon/32.png",
+                "achievement_desc": "Bạn đã hoàn thành 5 bài tập toán",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "No need for a computer level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Khỏi cần máy tính - cấp 2",
+                "achievement_name": "Khỏi cần máy tính",
+                "achievement_images": "./achievement_icon/2.png",
+                "achievement_desc": "Bạn đã hoàn thành 10 bài tập toán",
+                "difficult_rate": "3/10",
+                "status": "không ẩn"
+            },
+            "No need for a computer level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Khỏi cần máy tính - cấp 3",
+                "achievement_name": "Khỏi cần máy tính",
+                "achievement_images": "./achievement_icon/4.png",
+                "achievement_desc": "Bạn đã hoàn thành 25 bài tập toán",
+                "difficult_rate": "4/10",
+                "status": "không ẩn"
+            },
+            "No need for a computer level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Khỏi cần máy tính - cấp 4",
+                "achievement_name": "Khỏi cần máy tính",
+                "achievement_images": "./achievement_icon/9.png",
+                "achievement_desc": "Bạn đã hoàn thành 50 bài tập toán",
+                "difficult_rate": "6/10",
+                "status": "không ẩn"
+            },
+            "No need for a computer level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Khỏi cần máy tính - cấp 5",
+                "achievement_name": "Khỏi cần máy tính",
+                "achievement_images": "./achievement_icon/36.png",
+                "achievement_desc": "Bạn đã hoàn thành 100 bài tập toán",
+                "difficult_rate": "8/10",
+                "status": "không ẩn"
+            },
+            "Exemplary Citizen level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Công dân mẫu mực - cấp 1",
+                "achievement_name": "Công dân mẫu mực",
+                "achievement_images": "./achievement_icon/14.png",
+                "achievement_desc": "Bạn đã hoàn thành 5 bài tập môn GDCD",
+                "difficult_rate": "1/10",
+                "status": "không ẩn"
+            },
+            "Exemplary Citizen level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Công dân mẫu mực - cấp 2",
+                "achievement_name": "Công dân mẫu mực",
+                "achievement_images": "./achievement_icon/29.png",
+                "achievement_desc": "Bạn đã hoàn thành 10 bài tập môn GDCD",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "Exemplary Citizen level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Công dân mẫu mực - cấp 3",
+                "achievement_name": "Công dân mẫu mực",
+                "achievement_images": "./achievement_icon/7.png",
+                "achievement_desc": "Bạn đã hoàn thành 25 bài tập môn GDCD",
+                "difficult_rate": "4/10",
+                "status": "không ẩn"
+            },
+            "Exemplary Citizen level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Công dân mẫu mực - cấp 4",
+                "achievement_name": "Công dân mẫu mực",
+                "achievement_images": "./achievement_icon/31.png",
+                "achievement_desc": "Bạn đã hoàn thành 50 bài tập môn GDCD",
+                "difficult_rate": "6/10",
+                "status": "không ẩn"
+            },
+            "Exemplary Citizen level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Công dân mẫu mực - cấp 5",
+                "achievement_name": "Công dân mẫu mực",
+                "achievement_images": "./achievement_icon/12.png",
+                "achievement_desc": "Bạn đã hoàn thành 100 bài tập môn GDCD",
+                "difficult_rate": "8/10",
+                "status": "không ẩn"
+            },
+            "Here comes the clerk level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Dân văn phòng đây rồi - cấp 1",
+                "achievement_name": "Dân văn phòng đây rồi",
+                "achievement_images": "./achievement_icon/3.png",
+                "achievement_desc": "Bạn đã hoàn thành 5 bài tập môn Tin học",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "Here comes the clerk level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Dân văn phòng đây rồi - cấp 2",
+                "achievement_name": "Dân văn phòng đây rồi",
+                "achievement_images": "./achievement_icon/25.png",
+                "achievement_desc": "Bạn đã hoàn thành 10 bài tập môn Tin học",
+                "difficult_rate": "3/10",
+                "status": "không ẩn"
+            },
+            "Here comes the clerk level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Dân văn phòng đây rồi - cấp 3",
+                "achievement_name": "Dân văn phòng đây rồi",
+                "achievement_images": "./achievement_icon/32.png",
+                "achievement_desc": "Bạn đã hoàn thành 25 bài tập môn Tin học",
+                "difficult_rate": "4/10",
+                "status": "không ẩn"
+            },
+            "Here comes the clerk level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Dân văn phòng đây rồi - cấp 4",
+                "achievement_name": "Dân văn phòng đây rồi",
+                "achievement_images": "./achievement_icon/15.png",
+                "achievement_desc": "Bạn đã hoàn thành 50 bài tập môn Tin học",
+                "difficult_rate": "6/10",
+                "status": "không ẩn"
+            },
+            "Here comes the clerk level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Dân văn phòng đây rồi - cấp 5",
+                "achievement_name": "Dân văn phòng đây rồi",
+                "achievement_images": "./achievement_icon/16.png",
+                "achievement_desc": "Bạn đã hoàn thành 100 bài tập môn Tin học",
+                "difficult_rate": "8/10",
+                "status": "không ẩn"
+            },
+            "Nothing can make it difficult for me level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Không gì làm khó được tôi - cấp 1",
+                "achievement_name": "Không gì làm khó được tôi",
+                "achievement_images": "./achievement_icon/28.png",
+                "achievement_desc": "Bạn đã hoàn thành 5 bài tập môn KHTN",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "Nothing can make it difficult for me level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Không gì làm khó được tôi - cấp 2",
+                "achievement_name": "Không gì làm khó được tôi",
+                "achievement_images": "./achievement_icon/11.png",
+                "achievement_desc": "Bạn đã hoàn thành 10 bài tập môn KHTN",
+                "difficult_rate": "3/10",
+                "status": "không ẩn"
+            },
+            "Nothing can make it difficult for me level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Không gì làm khó được tôi - cấp 3",
+                "achievement_name": "Không gì làm khó được tôi",
+                "achievement_images": "./achievement_icon/10.png",
+                "achievement_desc": "Bạn đã hoàn thành 25 bài tập môn KHTN",
+                "difficult_rate": "4/10",
+                "status": "không ẩn"
+            },
+            "Nothing can make it difficult for me level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Không gì làm khó được tôi - cấp 4",
+                "achievement_name": "Không gì làm khó được tôi",
+                "achievement_images": "./achievement_icon/19.png",
+                "achievement_desc": "Bạn đã hoàn thành 50 bài tập môn KHTN",
+                "difficult_rate": "6/10",
+                "status": "không ẩn"
+            },
+            "Nothing can make it difficult for me level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Không gì làm khó được tôi - cấp 5",
+                "achievement_name": "Không gì làm khó được tôi",
+                "achievement_images": "./achievement_icon/9.png",
+                "achievement_desc": "Bạn đã hoàn thành 100 bài tập môn KHTN",
+                "difficult_rate": "8/10",
+                "status": "không ẩn"
+            },
+            "Geography is balanced level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Sử địa cân tất - cấp 1",
+                "achievement_name": "Sử địa cân tất",
+                "achievement_images": "./achievement_icon/37.png",
+                "achievement_desc": "Bạn đã hoàn thành 5 bài tập môn Sử - Địa",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "Geography is balanced level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Sử địa cân tất - cấp 2",
+                "achievement_name": "Sử địa cân tất",
+                "achievement_images": "./achievement_icon/20.png",
+                "achievement_desc": "Bạn đã hoàn thành 10 bài tập môn Sử - Địa",
+                "difficult_rate": "3/10",
+                "status": "không ẩn"
+            },
+            "Geography is balanced level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Sử địa cân tất - cấp 3",
+                "achievement_name": "Sử địa cân tất",
+                "achievement_images": "./achievement_icon/35.png",
+                "achievement_desc": "Bạn đã hoàn thành 25 bài tập môn Sử - Địa",
+                "difficult_rate": "4/10",
+                "status": "không ẩn"
+            },
+            "Geography is balanced level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Sử địa cân tất - cấp 4",
+                "achievement_name": "Sử địa cân tất",
+                "achievement_images": "./achievement_icon/18.png",
+                "achievement_desc": "Bạn đã hoàn thành 50 bài tập môn Sử - Địa",
+                "difficult_rate": "6/10",
+                "status": "không ẩn"
+            },
+            "Geography is balanced level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Sử địa cân tất - cấp 5",
+                "achievement_name": "Sử địa cân tất",
+                "achievement_images": "./achievement_icon/33.png",
+                "achievement_desc": "Bạn đã hoàn thành 100 bài tập môn Sử - Địa",
+                "difficult_rate": "8/10",
+                "status": "không ẩn"
+            },
+            "Practice test master level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Cao thủ luyện đề - cấp 1",
+                "achievement_name": "Cao thủ luyện đề",
+                "achievement_images": "./achievement_icon/1.png",
+                "achievement_desc": "Bạn đã hoàn thành 5 đề thi thử",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "Practice test master level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Cao thủ luyện đề - cấp 2",
+                "achievement_name": "Cao thủ luyện đề",
+                "achievement_images": "./achievement_icon/19.png",
+                "achievement_desc": "Bạn đã hoàn thành 10 đề thi thử",
+                "difficult_rate": "3/10",
+                "status": "không ẩn"
+            },
+            "Practice test master level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Cao thủ luyện đề - cấp 3",
+                "achievement_name": "Cao thủ luyện đề",
+                "achievement_images": "./achievement_icon/22.png",
+                "achievement_desc": "Bạn đã hoàn thành 20 đề thi thử",
+                "difficult_rate": "5/10",
+                "status": "không ẩn"
+            },
+            "Practice test master level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Cao thủ luyện đề - cấp 4",
+                "achievement_name": "Cao thủ luyện đề",
+                "achievement_images": "./achievement_icon/20.png",
+                "achievement_desc": "Bạn đã hoàn thành 30 đề thi thử",
+                "difficult_rate": "7/10",
+                "status": "không ẩn"
+            },
+            "Practice test master level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Cao thủ luyện đề - cấp 5",
+                "achievement_name": "Cao thủ luyện đề",
+                "achievement_images": "./achievement_icon/31.png",
+                "achievement_desc": "Bạn đã hoàn thành 50 đề thi thử",
+                "difficult_rate": "9/10",
+                "status": "không ẩn"
+            },
+            "Note-taking master level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Bậc thầy ghi chú - cấp 1",
+                "achievement_name": "Bậc thầy ghi chú",
+                "achievement_images": "./achievement_icon/23.png",
+                "achievement_desc": "Bạn đã tạo và lưu trữ 10 ghi chú bài giảng",
+                "difficult_rate": "1/10",
+                "status": "không ẩn"
+            },
+            "Note-taking master level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Bậc thầy ghi chú - cấp 2",
+                "achievement_name": "Bậc thầy ghi chú",
+                "achievement_images": "./achievement_icon/13.png",
+                "achievement_desc": "Bạn đã tạo và lưu trữ 25 ghi chú bài giảng",
+                "difficult_rate": "3/10",
+                "status": "không ẩn"
+            },
+            "Note-taking master level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Bậc thầy ghi chú - cấp 3",
+                "achievement_name": "Bậc thầy ghi chú",
+                "achievement_images": "./achievement_icon/5.png",
+                "achievement_desc": "Bạn đã tạo và lưu trữ 50 ghi chú bài giảng",
+                "difficult_rate": "5/10",
+                "status": "không ẩn"
+            },
+            "Note-taking master level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Bậc thầy ghi chú - cấp 4",
+                "achievement_name": "Bậc thầy ghi chú",
+                "achievement_images": "./achievement_icon/29.png",
+                "achievement_desc": "Bạn đã tạo và lưu trữ 100 ghi chú bài giảng",
+                "difficult_rate": "7/10",
+                "status": "không ẩn"
+            },
+            "Note-taking master level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Bậc thầy ghi chú - cấp 5",
+                "achievement_name": "Bậc thầy ghi chú",
+                "achievement_images": "./achievement_icon/2.png",
+                "achievement_desc": "Bạn đã tạo và lưu trữ 200 ghi chú bài giảng",
+                "difficult_rate": "9/10",
+                "status": "không ẩn"
+            },
+            "Smart time management level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Quản lý thời gian thông minh - cấp 1",
+                "achievement_name": "Quản lý thời gian thông minh",
+                "achievement_images": "./achievement_icon/27.png",
+                "achievement_desc": "Bạn đã hoàn thành 80% kế hoạch học tập trong 1 tuần liên tục",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "Smart time management level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Quản lý thời gian thông minh - cấp 2",
+                "achievement_name": "Quản lý thời gian thông minh",
+                "achievement_images": "./achievement_icon/21.png",
+                "achievement_desc": "Bạn đã hoàn thành 80% kế hoạch học tập trong 3 tuần liên tục",
+                "difficult_rate": "4/10",
+                "status": "không ẩn"
+            },
+            "Smart time management level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Quản lý thời gian thông minh - cấp 3",
+                "achievement_name": "Quản lý thời gian thông minh",
+                "achievement_images": "./achievement_icon/26.png",
+                "achievement_desc": "Bạn đã hoàn thành 80% kế hoạch học tập trong 5 tuần liên tục",
+                "difficult_rate": "6/10",
+                "status": "không ẩn"
+            },
+            "Smart time management level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Quản lý thời gian thông minh - cấp 4",
+                "achievement_name": "Quản lý thời gian thông minh",
+                "achievement_images": "./achievement_icon/23.png",
+                "achievement_desc": "Bạn đã hoàn thành 80% kế hoạch học tập trong 10 tuần liên tục",
+                "difficult_rate": "8/10",
+                "status": "không ẩn"
+            },
+            "Smart time management level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Quản lý thời gian thông minh - cấp 5",
+                "achievement_name": "Quản lý thời gian thông minh",
+                "achievement_images": "./achievement_icon/3.png",
+                "achievement_desc": "Bạn đã hoàn thành 80% kế hoạch học tập trong 15 tuần liên tục",
+                "difficult_rate": "9/10",
+                "status": "không ẩn"
+            },
+            "Challenge yourself level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thách thức bản thân - cấp 1",
+                "achievement_name": "Thách thức bản thân",
+                "achievement_images": "./achievement_icon/31.png",
+                "achievement_desc": "Bạn đã hoàn thành 5 bài tập nâng cao trên MasterEdu",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "Challenge yourself level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thách thức bản thân - cấp 2",
+                "achievement_name": "Thách thức bản thân",
+                "achievement_images": "./achievement_icon/9.png",
+                "achievement_desc": "Bạn đã hoàn thành 10 bài tập nâng cao trên MasterEdu",
+                "difficult_rate": "4/10",
+                "status": "không ẩn"
+            },
+            "Challenge yourself level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thách thức bản thân - cấp 3",
+                "achievement_name": "Thách thức bản thân",
+                "achievement_images": "./achievement_icon/28.png",
+                "achievement_desc": "Bạn đã hoàn thành 25 bài tập nâng cao trên MasterEdu",
+                "difficult_rate": "6/10",
+                "status": "không ẩn"
+            },
+            "Challenge yourself level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thách thức bản thân - cấp 4",
+                "achievement_name": "Thách thức bản thân",
+                "achievement_images": "./achievement_icon/11.png",
+                "achievement_desc": "Bạn đã hoàn thành 50 bài tập nâng cao trên MasterEdu",
+                "difficult_rate": "8/10",
+                "status": "không ẩn"
+            },
+            "Challenge yourself level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thách thức bản thân - cấp 5",
+                "achievement_name": "Thách thức bản thân",
+                "achievement_images": "./achievement_icon/32.png",
+                "achievement_desc": "Bạn đã hoàn thành 100 bài tập nâng cao trên MasterEdu",
+                "difficult_rate": "9/10",
+                "status": "không ẩn"
+            },
+            "Knowledge Scan Machine level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Máy quét kiến thức - cấp 1",
+                "achievement_name": "Máy quét kiến thức",
+                "achievement_images": "./achievement_icon/31.png",
+                "achievement_desc": "Bạn đã đọc hiểu, ghi nhớ nội dung của 10 bài giảng trong một lần đọc",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "Knowledge Scan Machine level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Máy quét kiến thức - cấp 2",
+                "achievement_name": "Máy quét kiến thức",
+                "achievement_images": "./achievement_icon/14.png",
+                "achievement_desc": "Bạn đã đọc hiểu, ghi nhớ nội dung của 25 bài giảng trong một lần đọc",
+                "difficult_rate": "3/10",
+                "status": "không ẩn"
+            },
+            "Knowledge Scan Machine level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Máy quét kiến thức - cấp 3",
+                "achievement_name": "Máy quét kiến thức",
+                "achievement_images": "./achievement_icon/30.png",
+                "achievement_desc": "Bạn đã đọc hiểu, ghi nhớ nội dung của 50 bài giảng trong một lần đọc",
+                "difficult_rate": "5/10",
+                "status": "không ẩn"
+            },
+            "Knowledge Scan Machine level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Máy quét kiến thức - cấp 4",
+                "achievement_name": "Máy quét kiến thức",
+                "achievement_images": "./achievement_icon/35.png",
+                "achievement_desc": "Bạn đã đọc hiểu, ghi nhớ nội dung của 100 bài giảng trong một lần đọc",
+                "difficult_rate": "7/10",
+                "status": "không ẩn"
+            },
+            "Knowledge Scan Machine level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Máy quét kiến thức - cấp 5",
+                "achievement_name": "Máy quét kiến thức",
+                "achievement_images": "./achievement_icon/12.png",
+                "achievement_desc": "Bạn đã đọc hiểu, ghi nhớ nội dung của 200 bài giảng trong một lần đọc",
+                "difficult_rate": "9/10",
+                "status": "không ẩn"
+            },
+            "Talented Editor level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Biên tập viên tài năng - cấp 1",
+                "achievement_name": "Biên tập viên tài năng",
+                "achievement_images": "./achievement_icon/22.png",
+                "achievement_desc": "Bạn đã góp 5 tài liệu học tập chất lượng cho thư viện tài liệu",
+                "difficult_rate": "2/10",
+                "status": "không ẩn"
+            },
+            "Talented Editor level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Biên tập viên tài năng - cấp 2",
+                "achievement_name": "Biên tập viên tài năng",
+                "achievement_images": "./achievement_icon/2.png",
+                "achievement_desc": "Bạn đã góp 10 tài liệu học tập chất lượng cho thư viện tài liệu",
+                "difficult_rate": "4/10",
+                "status": "không ẩn"
+            },
+            "Talented Editor level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Biên tập viên tài năng - cấp 3",
+                "achievement_name": "Biên tập viên tài năng",
+                "achievement_images": "./achievement_icon/19.png",
+                "achievement_desc": "Bạn đã góp 25 tài liệu học tập chất lượng cho thư viện tài liệu",
+                "difficult_rate": "6/10",
+                "status": "không ẩn"
+            },
+            "Talented Editor level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Biên tập viên tài năng - cấp 4",
+                "achievement_name": "Biên tập viên tài năng",
+                "achievement_images": "./achievement_icon/23.png",
+                "achievement_desc": "Bạn đã góp 50 tài liệu học tập chất lượng cho thư viện tài liệu",
+                "difficult_rate": "8/10",
+                "status": "không ẩn"
+            },
+            "Talented Editor level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Biên tập viên tài năng - cấp 5",
+                "achievement_name": "Biên tập viên tài năng",
+                "achievement_images": "./achievement_icon/14.png",
+                "achievement_desc": "Bạn đã góp 100 tài liệu học tập chất lượng cho thư viện tài liệu",
+                "difficult_rate": "9/10",
+                "status": "không ẩn"
+            },
+            "Super Focus level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Siêu tập trung - cấp 1",
+                "achievement_name": "Siêu tập trung",
+                "achievement_images": "./achievement_icon/30.png",
+                "achievement_desc": "Bạn đã tập trung hoàn thành bài tập ít nhất 5 phút liên tục cao độ",
+                "difficult_rate": "1/10",
+                "status": "không ẩn"
+            },
+            "Super Focus level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Siêu tập trung - cấp 2",
+                "achievement_name": "Siêu tập trung",
+                "achievement_images": "./achievement_icon/25.png",
+                "achievement_desc": "Bạn đã tập trung hoàn thành bài tập ít nhất 30 phút liên tục cao độ",
+                "difficult_rate": "3/10",
+                "status": "không ẩn"
+            },
+            "Super Focus level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Siêu tập trung - cấp 3",
+                "achievement_name": "Siêu tập trung",
+                "achievement_images": "./achievement_icon/33.png",
+                "achievement_desc": "Bạn đã tập trung hoàn thành bài tập ít nhất 45 phút liên tục cao độ",
+                "difficult_rate": "5/10",
+                "status": "không ẩn"
+            },
+            "Super Focus level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Siêu tập trung - cấp 4",
+                "achievement_name": "Siêu tập trung",
+                "achievement_images": "./achievement_icon/29.png",
+                "achievement_desc": "Bạn đã tập trung hoàn thành bài tập ít nhất 60 phút liên tục cao độ",
+                "difficult_rate": "7/10",
+                "status": "không ẩn"
+            },
+            "Super Focus level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Siêu tập trung - cấp 5",
+                "achievement_name": "Siêu tập trung",
+                "achievement_images": "./achievement_icon/16.png",
+                "achievement_desc": "Bạn đã tập trung hoàn thành bài tập ít nhất 90 phút liên tục cao độ",
+                "difficult_rate": "9/10",
+                "status": "không ẩn"
+            }
+        },
+        "Thành tựu ẩn": {
+            "Content Creation": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Nhà sáng tạo nội dung",
+                "achievement_name": "Nhà sáng tạo nội dung",
+                "achievement_images": "./achievement_icon/19.png",
+                "achievement_desc": "Bạn đã tạo và chia sẻ 1 bài giảng trên MasterEdu",
+                "difficult_rate": "3/5",
+                "status": "ẩn"
+            },
+            "Inspiration": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Truyền cảm hứng",
+                "achievement_name": "Truyền cảm hứng",
+                "achievement_images": "./achievement_icon/23.png",
+                "achievement_desc": "Bài viết của bạn trên MasterEdu được 100 người thích",
+                "difficult_rate": "3/5",
+                "status": "ẩn"
+            },
+            "Tech Genius level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thần đồng công nghệ - cấp 1",
+                "achievement_name": "Thần đồng công nghệ",
+                "achievement_images": "./achievement_icon/36.png",
+                "achievement_desc": "Bạn đã phát hiện 1 lỗi có trong MasterEdu",
+                "difficult_rate": "1/5",
+                "status": "ẩn"
+            },
+            "Tech Genius level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thần đồng công nghệ - cấp 2",
+                "achievement_name": "Thần đồng công nghệ",
+                "achievement_images": "./achievement_icon/34.png",
+                "achievement_desc": "Bạn đã phát hiện 5 lỗi có trong MasterEdu",
+                "difficult_rate": "2/5",
+                "status": "ẩn"
+            },
+            "Tech Genius level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thần đồng công nghệ - cấp 3",
+                "achievement_name": "Thần đồng công nghệ",
+                "achievement_images": "./achievement_icon/7.png",
+                "achievement_desc": "Bạn đã phát hiện 10 lỗi có trong MasterEdu",
+                "difficult_rate": "4/5",
+                "status": "ẩn"
+            },
+            "Explore MasterEdu": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thám hiểm MasterEdu",
+                "achievement_name": "Thám hiểm MasterEdu",
+                "achievement_images": "./achievement_icon/15.png",
+                "achievement_desc": "Bạn đã khám phá tất cả tính năng trong MasterEdu",
+                "difficult_rate": "2/5",
+                "status": "ẩn"
+            },
+            "Knowledge Hunter": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thợ săn kiến thức",
+                "achievement_name": "Thợ săn kiến thức",
+                "achievement_images": "./achievement_icon/24.png",
+                "achievement_desc": "Bạn đã tìm kiếm và lưu trữ 100 tài liệu học tập trên MasterEdu",
+                "difficult_rate": "3/5",
+                "status": "ẩn"
+            },
+            "Super Memory": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Siêu trí nhớ",
+                "achievement_name": "Siêu trí nhớ",
+                "achievement_images": "./achievement_icon/21.png",
+                "achievement_desc": "Bạn đã trả lời đúng 10 câu hỏi trí nhớ liên tiếp trong trò trí tuệ của MasterEdu",
+                "difficult_rate": "4/5",
+                "status": "ẩn"
+            },
+            "Learn Anytime - Anywhere": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Học tập mọi lúc - mọi nơi",
+                "achievement_name": "Học tập mọi lúc - mọi nơi",
+                "achievement_images": "./achievement_icon/2.png",
+                "achievement_desc": "Bạn đã đăng nhập MasterEdu từ 3 thiết bị khác nhau",
+                "difficult_rate": "2/5",
+                "status": "ẩn"
+            },
+            "Excellent student of the year": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Học sinh xuất sắc của năm",
+                "achievement_name": "Học sinh xuất sắc của năm",
+                "achievement_images": "./achievement_icon/12.png",
+                "achievement_desc": "Bạn đã hoàn thành 4 cấp mỗi môn học",
+                "difficult_rate": "4/5",
+                "status": "ẩn"
+            },
+            "The Flash level 1": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thần tốc - cấp 1",
+                "achievement_name": "Thần tốc",
+                "achievement_images": "./achievement_icon/8.png",
+                "achievement_desc": "Bạn đã hoàn thành 5 bài tập trong vòng 50% thời gian quy định",
+                "difficult_rate": "1/5",
+                "status": "ẩn"
+            },
+            "The Flash level 2": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thần tốc - cấp 2",
+                "achievement_name": "Thần tốc",
+                "achievement_images": "./achievement_icon/21.png",
+                "achievement_desc": "Bạn đã hoàn thành 10 bài tập trong vòng 50% thời gian quy định",
+                "difficult_rate": "2/5",
+                "status": "ẩn"
+            },
+            "The Flash level 3": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thần tốc - cấp 3",
+                "achievement_name": "Thần tốc",
+                "achievement_images": "./achievement_icon/4.png",
+                "achievement_desc": "Bạn đã hoàn thành 25 bài tập trong vòng 50% thời gian quy định",
+                "difficult_rate": "3/5",
+                "status": "ẩn"
+            },
+            "The Flash level 4": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thần tốc - cấp 4",
+                "achievement_name": "Thần tốc",
+                "achievement_images": "./achievement_icon/31.png",
+                "achievement_desc": "Bạn đã hoàn thành 50 bài tập trong vòng 50% thời gian quy định",
+                "difficult_rate": "4/5",
+                "status": "ẩn"
+            },
+            "The Flash level 5": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thần tốc - cấp 5",
+                "achievement_name": "Thần tốc",
+                "achievement_images": "./achievement_icon/3.png",
+                "achievement_desc": "Bạn đã hoàn thành 100 bài tập trong vòng 50% thời gian quy định",
+                "difficult_rate": "5/5",
+                "status": "ẩn"
+            },
+            "Night Owl": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Cú đêm",
+                "achievement_name": "Cú đêm",
+                "achievement_images": "./achievement_icon/17.png",
+                "achievement_desc": "Bạn đã đăng nhập MasterEdu sau 12 giờ đêm",
+                "difficult_rate": "1/5",
+                "status": "ẩn"
+            },
+            "Study - Study more - Study forever": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Học - học nữa - học mãi",
+                "achievement_name": "Học - học nữa - học mãi",
+                "achievement_images": "./achievement_icon/24.png",
+                "achievement_desc": "Bạn đã sử dụng MasterEdu liên tục trong 24 giờ ( nghỉ không quá 30 phút )",
+                "difficult_rate": "3/5",
+                "status": "ẩn"
+            },
+            "Pioneer": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Người tiên phong",
+                "achievement_name": "Người tiên phong",
+                "achievement_images": "./achievement_icon/18.png",
+                "achievement_desc": "Bạn đã sử dụng tính năng mới của MasterEdu trong 24 giờ ra mắt đầu tiên",
+                "difficult_rate": "3/5",
+                "status": "ẩn"
+            },
+            "Companion": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Người bạn đồng hành",
+                "achievement_name": "Người bạn đồng hành",
+                "achievement_images": "./achievement_icon/16.png",
+                "achievement_desc": "Bạn đã sử dụng MasterEdu 1 năm liên tiếp",
+                "difficult_rate": "5/5",
+                "status": "ẩn"
+            },
+            "Potential Contributor": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Cộng tác viên tiềm năng",
+                "achievement_name": "Cộng tác viên tiềm năng",
+                "achievement_images": "./achievement_icon/28.png",
+                "achievement_desc": "Bạn đã đóng góp ý kiến giá trị cho đội ngũ MasterEdu",
+                "difficult_rate": "3/5",
+                "status": "ẩn"
+            },
+            "Special Day": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Ngày đặc biệt",
+                "achievement_name": "Ngày đặc biệt",
+                "achievement_images": "./achievement_icon/20.png",
+                "achievement_desc": "Bạn đã đăng nhập MasterEdu vào ngày sinh nhật của mình",
+                "difficult_rate": "1/5",
+                "status": "ẩn"
+            },
+            "Potential Inventor": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Nhà phát minh tiềm năng",
+                "achievement_name": "Nhà phát minh tiềm năng",
+                "achievement_images": "./achievement_icon/31.png",
+                "achievement_desc": "Bạn đã đề xuất ý tưởng cải tiến MasterEdu và được đội ngũ đưa vào sử dụng",
+                "difficult_rate": "4/5",
+                "status": "ẩn"
+            },
+            "Technology Believer": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tín đồ công nghệ",
+                "achievement_name": "Tín đồ công nghệ",
+                "achievement_images": "./achievement_icon/35.png",
+                "achievement_desc": "Bạn đã sử dụng mọi tính năng thành tạo có trên MasterEdu",
+                "difficult_rate": "4/5",
+                "status": "ẩn"
+            },
+            "Great Tester": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Tester đại tài",
+                "achievement_name": "Tester đại tài",
+                "achievement_images": "./achievement_icon/17.png",
+                "achievement_desc": "Bạn đã sử dụng phiên bản thử nghiệm và đóng góp ý kiến có giá trị cho MasterEdu",
+                "difficult_rate": "3/5",
+                "status": "ẩn"
+            },
+            "Why so observant?": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Sao hay soi quá à",
+                "achievement_name": "Sao hay soi quá à",
+                "achievement_images": "./achievement_icon/22.png",
+                "achievement_desc": "Bạn đã tìm ra lỗi ngớ ngẩn trong MasterEdu",
+                "difficult_rate": "2/5",
+                "status": "ẩn"
+            },
+            "Lucky": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Thánh nhọ",
+                "achievement_name": "Thánh nhọ",
+                "achievement_images": "./achievement_icon/2.png",
+                "achievement_desc": "Bạn đã gặp sự cố hy hữu khi đang sử dụng MasterEdu ( ví dụ: mạng ngủm trong lúc đang kiểm tra )",
+                "difficult_rate": "1/5",
+                "status": "ẩn"
+            },
+            "What did you eat that's so bad?:": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Ăn gì xui vậy má?",
+                "achievement_name": "Ăn gì xui vậy má?",
+                "achievement_images": "./achievement_icon/9.png",
+                "achievement_desc": "Bạn đã gặp 2 sự cố hy hữu khi đang sử dụng MasterEdu",
+                "difficult_rate": "2/5",
+                "status": "ẩn"
+            },
+            "Comprehensive student": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Học sinh toàn diện",
+                "achievement_name": "Học sinh toàn diện",
+                "achievement_images": "./achievement_icon/1.png",
+                "achievement_desc": "Bạn đã hoàn thành tất cả thành tựu về 7 môn học tập lấy điểm",
+                "difficult_rate": "4/5",
+                "status": "ẩn"
+            },
+            "Brain Freeze": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Não khỉ",
+                "achievement_name": "Não khỉ",
+                "achievement_images": "./achievement_icon/32.png",
+                "achievement_desc": "Bạn đã trả lời sai tất cả câu hỏi trong “ thử thách trí não “",
+                "difficult_rate": "2/5",
+                "status": "ẩn"
+            },
+            "Go away spam": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Bớt spam đi nào",
+                "achievement_name": "Bớt spam đi nào",
+                "achievement_images": "./achievement_icon/16.png",
+                "achievement_desc": "Bạn đã gửi 10 tin nhắn liên tiếp trong 1 phút",
+                "difficult_rate": "1/5",
+                "status": "ẩn"
+            },
+            "The Chosen One": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu The Chosen One",
+                "achievement_name": "The Chosen One",
+                "achievement_images": "./achievement_icon/34.png",
+                "achievement_desc": "Bạn là người đầu tiên đạt được tất cả thành tựu và danh hiệu có trong MasterEdu",
+                "difficult_rate": "5/5",
+                "status": "ẩn"
+            },
+            "You Are The Best": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu You Are The Best",
+                "achievement_name": "You Are The Best",
+                "achievement_images": "./achievement_icon/25.png",
+                "achievement_desc": "Bạn đã đạt được 75% thành tựu có trong MasterEdu",
+                "difficult_rate": "4/5",
+                "status": "ẩn"
+            },
+            "Happy New Year": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Chúc mừng năm mới",
+                "achievement_name": "Chúc mừng năm mới",
+                "achievement_images": "./achievement_icon/3.png",
+                "achievement_desc": "Bạn đã đăng nhập MasterEdu đúng ngày mùng 1 Tết âm lịch",
+                "difficult_rate": "1/5",
+                "status": "ẩn"
+            },
+            "It's his fault, his fault, his fault,...": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Lỗi tại anh, tại ổng, tại nó, tại…",
+                "achievement_name": "Lỗi tại anh, tại ổng, tại nó, tại…",
+                "achievement_images": "./achievement_icon/30.png",
+                "achievement_desc": "Bạn bị disconnect khỏi lớp học trực tuyến đúng lúc đang thuyết trình",
+                "difficult_rate": "2/5",
+                "status": "ẩn"
+            },
+            "Notification enthusiast": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Fan cứng của thông báo",
+                "achievement_name": "Fan cứng của thông báo",
+                "achievement_images": "./achievement_icon/23.png",
+                "achievement_desc": "Bạn đã nhận được 99+ thông báo từ MasterEdu",
+                "difficult_rate": "2/5",
+                "status": "ẩn"
+            },
+            "What's wrong with the keyboard?:": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Mắc gì nhập sai?",
+                "achievement_name": "Mắc gì nhập sai?",
+                "achievement_images": "./achievement_icon/11.png",
+                "achievement_desc": "Bạn đã nhập sai mật khẩu quá 3 lần liên tiếp",
+                "difficult_rate": "1/5",
+                "status": "ẩn"
+            },
+            "That network": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Mạng mạnh đếy",
+                "achievement_name": "Mạng mạnh đếy",
+                "achievement_images": "./achievement_icon/4.png",
+                "achievement_desc": "Bạn đã tham gia lớp trực tuyến với đường truyền cực kỳ kém",
+                "difficult_rate": "2/5",
+                "status": "ẩn"
+            },
+            "Gratitude": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Lời tri ân",
+                "achievement_name": "Lời tri ân",
+                "achievement_images": "./achievement_icon/2.png",
+                "achievement_desc": "Bạn đã gửi lời cảm ơn đến MasterEdu và đội ngũ phát triển",
+                "difficult_rate": "1/5",
+                "status": "ẩn"
+            },
+            "Hey, the mic": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Ê mic kìa",
+                "achievement_name": "Ê mic kìa",
+                "achievement_images": "./achievement_icon/26.png",
+                "achievement_desc": "Bạn đã quên tắt mic và phát ra những âm thanh “bí ẩn” trong lớp trực tuyến",
+                "difficult_rate": "2/5",
+                "status": "ẩn"
+            },
+            "King/Queen of skipping class": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Ông hoàng/bà hoàng “bùng” học",
+                "achievement_name": "Ông hoàng/bà hoàng “bùng” học",
+                "achievement_images": "./achievement_icon/20.png",
+                "achievement_desc": "Bạn đã bỏ lỡ 3 buổi liên tiếp",
+                "difficult_rate": "1/5",
+                "status": "ẩn"
+            },
+            "Back to overstudying": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Học quá trở lại",
+                "achievement_name": "Học quá trở lại",
+                "achievement_images": "./achievement_icon/12.png",
+                "achievement_desc": "Bạn đã quay lại MasterEdu sau một thời gian dài vắng bóng ( khoảng 2 tháng > )",
+                "difficult_rate": "1/5",
+                "status": "ẩn"
+            },
+            "Encyclopedia": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Bách khoa toàn thư",
+                "achievement_name": "Bách khoa toàn thư",
+                "achievement_images": "./achievement_icon/28.png",
+                "achievement_desc": "Bạn đã hoàn thành 5 cấp ở mỗi môn học",
+                "difficult_rate": "4/5",
+                "status": "ẩn"
+            },
+            "Decode the math problem": {
+                "greetings": "Chúc mừng bạn đạt được thành tựu Giải mã tuật toán",
+                "achievement_name": "Giải mã tuật toán",
+                "achievement_images": "./achievement_icon/3.png",
+                "achievement_desc": "Bạn đã hiểu rõ cách thức hoạt động của hệ thống đề xuất bài tập trên MasterEdu",
+                "difficult_rate": "3/5",
+                "status": "ẩn"
+            }
+        }
+    }
+}
