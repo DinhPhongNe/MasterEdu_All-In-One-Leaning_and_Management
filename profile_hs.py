@@ -9,41 +9,7 @@ import json
 import copy
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
-from kivy.core.audio import SoundLoader
-import threading
 
-file_lock = threading.Lock()
-class AchievementNotification(QWidget):
-    def __init__(self, parent=None, achievement_name=""):
-        super().__init__(parent)
-        self.setWindowFlags(Qt.WindowType.FramelessWindowHint | Qt.WindowType.WindowStaysOnTopHint)
-        self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
-
-        layout = QVBoxLayout()
-        self.label = QLabel(f"Thành tựu mới!\n{achievement_name}")
-        self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        layout.addWidget(self.label)
-        self.setLayout(layout)
-
-        self.animation = QPropertyAnimation(self, b"windowOpacity")
-        self.animation.setDuration(500)  # Thời gian hiển thị (milliseconds)
-        self.animation.setStartValue(0)
-        self.animation.setEndValue(1)
-        self.animation.setEasingCurve(QEasingCurve.Type.InOutQuad)
-
-        self.timer = QTimer()
-        self.timer.timeout.connect(self.hide_notification)
-
-    def show_notification(self):
-        self.show()
-        self.animation.start()
-        self.timer.start(3000)  # Hiển thị trong 3 giây (milliseconds)
-
-    def hide_notification(self):
-        self.animation.setDirection(QPropertyAnimation.Direction.Backward)
-        self.animation.start()
-        self.animation.finished.connect(self.hide)
-        
 class JSONFileHandler(FileSystemEventHandler):
     def __init__(self, signal):
         super().__init__()
@@ -71,35 +37,64 @@ class AchievementMonitorThread(QThread):
     def stop(self):
         self.observer.stop()
         self.wait()
-            
+
+class AchievementNotification(QWidget):
+    def __init__(self, parent=None, achievement_data=None):
+        super().__init__(parent)
+        uic.loadUi("gui/achievement_noti.ui", self)
+        self.setWindowFlags(Qt.WindowType.FramelessWindowHint | Qt.WindowType.WindowStaysOnTopHint)
+        self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
+        self.achievement_data = achievement_data
+
+        # Ánh xạ tên widget trong UI với key trong JSON
+        self.widget_mapping = {
+            "greetings": self.findChild(QLabel, "greetings"),
+            "achievement_name": self.findChild(QLabel, "achievement_name"),
+            "achievement_images": self.findChild(QLabel, "achievement_images"),
+            "achievement_description": self.findChild(QLabel, "achievement_description"),
+            "difficult_rate": self.findChild(QLabel, "rate"),
+            "status": self.findChild(QLabel, "status")
+        }
+        self.update_display()
+        
+        self.animation = QPropertyAnimation(self, b"windowOpacity")
+        self.animation.setDuration(500)
+        self.animation.setStartValue(0)
+        self.animation.setEndValue(1)
+        self.animation.setEasingCurve(QEasingCurve.Type.InOutQuad)
+
+        self.timer = QTimer()
+        self.timer.timeout.connect(self.hide_notification)
+
+        print("Cửa sổ AchievementNotification đã được tạo.")
+        
+    def show_notification(self):
+        print("Hàm show_notification được gọi.")
+        self.show()
+        self.animation.start()
+        self.timer.start(3000)
+
+    def hide_notification(self):
+        self.animation.setDirection(QPropertyAnimation.Direction.Backward)
+        self.animation.start()
+        self.animation.finished.connect(self.hide)
+
+    def update_display(self):
+        for key, widget in self.widget_mapping.items():
+            if key == "achievement_images":
+                pixmap = QPixmap(self.achievement_data.get(key))
+                widget.setPixmap(pixmap)
+            else:
+                text = self.achievement_data.get(key)
+                widget.setText(text)
+
 class ProfileHS(QMainWindow):
     def __init__(self, data, tai_khoan):
         super().__init__()
         uic.loadUi("gui/profile_hs.ui", self)
         self.data = data
         self.tai_khoan = tai_khoan
-        self.old_achievements = copy.deepcopy(self.load_achievement_data())
-        self.achievement_monitor = AchievementMonitorThread(self)
-        self.achievement_monitor.achievement_unlocked.connect(self.check_for_new_achievements)
-        self.achievement_monitor.start()
-        self.profile_goback = self.findChild(QPushButton, "profile_goback")
-        self.profile_goback.clicked.connect(self.go_back) 
-        
-        # Khởi tạo QSystemTrayIcon
-        self.tray_icon = QSystemTrayIcon(self)
-        self.tray_icon.setIcon(QIcon("gui/icon_pack/12.jpeg"))  # Thay thế "icon.png" bằng đường dẫn đến icon của bạn
-        self.tray_icon.setVisible(True)
-        
-        self.timer = QTimer(self)
-        self.timer.timeout.connect(self.check_for_new_achievements)
-        self.timer.start(1000)  # 1000 milliseconds = 1 giây
 
-        self.update_profile()
-        self.profile_pic.mousePressEvent = self.change_profile_pic
-        # Tạo menu cho tray icon
-        self.tray_menu = QMenu()
-        self.tray_menu.addAction("Thoát", self.close)
-        self.tray_icon.setContextMenu(self.tray_menu)
         self.achievement_mapping = {
             "Study hard": "Học tập chăm chỉ",
             "Knowledge Discovery": "Khám phá tri thức",
@@ -165,7 +160,7 @@ class ProfileHS(QMainWindow):
             "Encyclopedia": "Bách khoa toàn thư",
             "Decode the math problem": "Giải mã thuật toán"
         }
-        
+
         self.achievement_widgets = []  # Danh sách chứa (QLabel, QProgressBar) cho mỗi thành tựu
         for i in range(1, 11):
             label = self.findChild(QFrame, f"Achievement_layout_{i}").findChild(QLabel, f"ten_thanh_tuu_{i}")
@@ -183,18 +178,30 @@ class ProfileHS(QMainWindow):
         self.profile_pic = self.findChild(QLabel, "profile_pic")
         self.last_online = self.findChild(QLabel, "last_online")
         self.achievement_setting_btn = self.findChild(QPushButton, "ahievement_setting_btn")
+
         self.achievement_setting_btn.clicked.connect(self.show_achievement_dialog)
 
         self.update_profile()
         self.profile_pic.mousePressEvent = self.change_profile_pic
-        self.old_achievements = copy.deepcopy(self.load_achievement_data())  # Lưu giá trị cũ của thành tựu
         
-        # Ánh xạ tên thành tựu tiếng Anh sang tiếng Việt
+        self.old_achievements = copy.deepcopy(self.load_achievement_data())
+        self.achievement_monitor = AchievementMonitorThread(self)
+        self.achievement_monitor.achievement_unlocked.connect(self.check_for_new_achievements)
+        self.achievement_monitor.start()
 
+        # Khởi tạo QSystemTrayIcon
+        self.tray_icon = QSystemTrayIcon(self)
+        self.tray_icon.setIcon(QIcon("gui/icon_pack/12.jpeg"))  # Thay thế "icon.png" bằng đường dẫn đến icon của bạn
+        self.tray_icon.setVisible(True)
+
+        # Tạo menu cho tray icon
+        self.tray_menu = QMenu()
+        self.tray_menu.addAction("Thoát", self.close)
+        self.tray_icon.setContextMenu(self.tray_menu)
+        
     def check_for_new_achievements(self):
+        print("Bắt đầu kiểm tra thành tựu mới...")
         new_achievements = self.load_achievement_data()
-        achievement_to_show = None
-
         for eng_name, vn_name in self.achievement_mapping.items():
             old_achievement = self.old_achievements.get(eng_name)
             new_achievement = new_achievements.get(eng_name)
@@ -202,36 +209,54 @@ class ProfileHS(QMainWindow):
             if isinstance(old_achievement, dict) and isinstance(new_achievement, dict):
                 for level in old_achievement.keys():
                     if not old_achievement.get(level) and new_achievement.get(level):
-                        achievement_to_show = vn_name
+                        # Tìm key của thành tựu trong file JSON
+                        achievement_key = f"{eng_name} {level}"
+                        
+                        # Hiển thị thông báo
+                        self.show_achievement_notification(achievement_key)
                         break
             elif not old_achievement and new_achievement:
-                achievement_to_show = vn_name
-
-            if achievement_to_show:
-                break
-
+                # Hiển thị thông báo
+                self.show_achievement_notification(eng_name)
+        
         self.old_achievements = copy.deepcopy(new_achievements)
         self.update_achievement_display(new_achievements)
 
-        if achievement_to_show:
-            self.show_achievement_notification(achievement_to_show)
-            
     def go_back(self):
         from menu_select_hs import MenuSelectHS  # Di chuyển dòng import vào đây
         self.menu_select_hs = MenuSelectHS(self.data, self.tai_khoan)
         self.menu_select_hs.show()
         self.close()
         
-    def show_achievement_notification(self, achievement_name):
-        # Tạo pop-up thông báo
-        notification = AchievementNotification(self, achievement_name)
-        notification.show_notification()
+    def show_achievement_notification(self, achievement_key):
+        print(f"Hàm show_achievement_notification được gọi với key: {achievement_key}")
+        print(f"Hiển thị thông báo cho achievement: {achievement_key}")
+
+        # Load dữ liệu từ file avc_des_avt.json
+        try:
+            with open("avc_des_avt.json", "r", encoding="utf-8") as f:
+                achievement_data = json.load(f)
+            print(f"Dữ liệu achievement: {achievement_data}")
+        except FileNotFoundError:
+            print(f"Không tìm thấy file avc_des_avt.json")
+            return
+
+        # Lấy thông tin của achievement từ JSON
+        achievement_info = achievement_data["Danh sách thành tựu"]["Thành tựu không ẩn"].get(achievement_key)
+        if not achievement_info:
+            print(f"Không tìm thấy thông tin cho achievement {achievement_key}")
+            return
+        
+        # Tạo và hiển thị cửa sổ thông báo - Di chuyển vào trong hàm
+        notification = AchievementNotification(achievement_data=achievement_info) 
+        notification.show()
 
         # Phát âm thanh
         sound = QSoundEffect(self)
-        sound.setSource(QUrl.fromLocalFile("sound/complete_acv.mp3"))
+        sound.setSource(QUrl.fromLocalFile("sound/achievement_sound.mp3"))
         sound.play()
-
+        print("Cửa sổ thông báo đã được tạo và hiển thị.")
+    
     def closeEvent(self, event):
         # Dừng thread theo dõi khi đóng cửa sổ
         self.achievement_monitor.stop()
@@ -346,28 +371,27 @@ class ProfileHS(QMainWindow):
         selected_achievement = self.achievement_list_widget.currentItem().text() if self.achievement_list_widget.currentItem() else None
         self.selected_achievements[selected_slot] = selected_achievement
         self.update_achievement_display(self.load_achievement_data())
-        sound = SoundLoader.load("sound/complete_acv.mp3")
-        if sound:
-            sound.play()
+        # sound = SoundLoader.load("sound/complete_acv.mp3")
+        # if sound:
+        #     sound.play()
 
         self.update_achievement_display(self.load_achievement_data())
         dialog.close()
 
     def load_achievement_data(self):
-        with file_lock:
-            for student in self.data["Danh_sach_hoc_sinh"]:
-                if student["Thông tin tài khoản"]["id_tai_khoan"] == self.tai_khoan["Thông tin tài khoản"]["id_tai_khoan"]:
-                    achievements = student.get("Thành tựu", {})
-                    # Chuyển đổi giá trị chuỗi "false" sang boolean False
-                    for key, value in achievements.items():
-                        if isinstance(value, dict):
-                            for level, achieved in value.items():
-                                if achieved == "false":
-                                    achievements[key][level] = False
-                        elif value == "false":
-                            achievements[key] = False
-                    return achievements
-            return {}
+        for student in self.data["Danh_sach_hoc_sinh"]:
+            if student["Thông tin tài khoản"]["id_tai_khoan"] == self.tai_khoan["Thông tin tài khoản"]["id_tai_khoan"]:
+                achievements = student.get("Thành tựu", {})
+                # Chuyển đổi giá trị chuỗi "false" sang boolean False
+                for key, value in achievements.items():
+                    if isinstance(value, dict):
+                        for level, achieved in value.items():
+                            if achieved == "false":
+                                achievements[key][level] = False
+                    elif value == "false":
+                        achievements[key] = False
+                return achievements
+        return {}
     
     def update_achievement_display(self, achievements):
         # Hiển thị các thành tựu được chọn (KHÔNG kiểm tra thay đổi file JSON ở đây)

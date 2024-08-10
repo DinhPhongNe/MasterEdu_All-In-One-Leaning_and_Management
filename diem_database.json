@@ -219,8 +219,8 @@
                     "level_5": false
                 },
                 "Night Owl": true,
-                "Study - Study more - Study forever": false,
-                "Pioneer": false,
+                "Study - Study more - Study forever": true,
+                "Pioneer": true,
                 "Companion": false,
                 "Potential Contributor": false,
                 "Special Day": false,
