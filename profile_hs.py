@@ -161,7 +161,7 @@ class ProfileHS(QMainWindow):
             "Decode the math problem": "Giải mã thuật toán"
         }
 
-        self.achievement_widgets = []  # Danh sách chứa (QLabel, QProgressBar) cho mỗi thành tựu
+        self.achievement_widgets = []
         for i in range(1, 11):
             label = self.findChild(QFrame, f"Achievement_layout_{i}").findChild(QLabel, f"ten_thanh_tuu_{i}")
             progress_bar = self.findChild(QFrame, f"Achievement_layout_{i}").findChild(QProgressBar, f"progressBar_{i}")
@@ -189,12 +189,10 @@ class ProfileHS(QMainWindow):
         self.achievement_monitor.achievement_unlocked.connect(self.check_for_new_achievements)
         self.achievement_monitor.start()
 
-        # Khởi tạo QSystemTrayIcon
         self.tray_icon = QSystemTrayIcon(self)
         self.tray_icon.setIcon(QIcon("gui/icon_pack/12.jpeg"))  # Thay thế "icon.png" bằng đường dẫn đến icon của bạn
         self.tray_icon.setVisible(True)
 
-        # Tạo menu cho tray icon
         self.tray_menu = QMenu()
         self.tray_menu.addAction("Thoát", self.close)
         self.tray_icon.setContextMenu(self.tray_menu)
@@ -209,21 +207,18 @@ class ProfileHS(QMainWindow):
             if isinstance(old_achievement, dict) and isinstance(new_achievement, dict):
                 for level in old_achievement.keys():
                     if not old_achievement.get(level) and new_achievement.get(level):
-                        # Tìm key của thành tựu trong file JSON
                         achievement_key = f"{eng_name} {level}"
                         
-                        # Hiển thị thông báo
                         self.show_achievement_notification(achievement_key)
                         break
             elif not old_achievement and new_achievement:
-                # Hiển thị thông báo
                 self.show_achievement_notification(eng_name)
         
         self.old_achievements = copy.deepcopy(new_achievements)
         self.update_achievement_display(new_achievements)
 
     def go_back(self):
-        from menu_select_hs import MenuSelectHS  # Di chuyển dòng import vào đây
+        from menu_select_hs import MenuSelectHS
         self.menu_select_hs = MenuSelectHS(self.data, self.tai_khoan)
         self.menu_select_hs.show()
         self.close()
@@ -232,7 +227,6 @@ class ProfileHS(QMainWindow):
         print(f"Hàm show_achievement_notification được gọi với key: {achievement_key}")
         print(f"Hiển thị thông báo cho achievement: {achievement_key}")
 
-        # Load dữ liệu từ file avc_des_avt.json
         try:
             with open("avc_des_avt.json", "r", encoding="utf-8") as f:
                 achievement_data = json.load(f)
@@ -241,37 +235,30 @@ class ProfileHS(QMainWindow):
             print(f"Không tìm thấy file avc_des_avt.json")
             return
 
-        # Lấy thông tin của achievement từ JSON
         achievement_info = achievement_data["Danh sách thành tựu"]["Thành tựu không ẩn"].get(achievement_key)
         if not achievement_info:
             print(f"Không tìm thấy thông tin cho achievement {achievement_key}")
             return
-        
-        # Tạo và hiển thị cửa sổ thông báo - Di chuyển vào trong hàm
+
         notification = AchievementNotification(achievement_data=achievement_info) 
         notification.show()
 
-        # Phát âm thanh
         sound = QSoundEffect(self)
         sound.setSource(QUrl.fromLocalFile("sound/achievement_sound.mp3"))
         sound.play()
         print("Cửa sổ thông báo đã được tạo và hiển thị.")
     
     def closeEvent(self, event):
-        # Dừng thread theo dõi khi đóng cửa sổ
         self.achievement_monitor.stop()
         super().closeEvent(event)
         
     def update_profile(self):
-        # Tìm kiếm thông tin học sinh dựa trên ID
         try:
             for student in self.data["Danh_sach_hoc_sinh"]:
                 if student["Thông tin tài khoản"]["id_tai_khoan"] == self.tai_khoan["Thông tin tài khoản"]["id_tai_khoan"]:
                     self.account_name.setText(student["Thông tin tài khoản"]["ten_tai_khoan"])
-                    # Chuyển đổi số điện thoại thành chuỗi:
                     self.call_number.setText(str(student["Thông tin tài khoản"]["so_dien_thoai"]))
                     self.jobs.setText("Học sinh")
-                    # Chuyển đổi số điện thoại thành chuỗi:
                     self.other_number.setText(str(student["Thông tin tài khoản"]["so_dien_thoai"]))
                     self.gender.setText(student["Thông tin tài khoản"].get("gender", "N/A"))
                     self.account_id.setText(str(student["Thông tin tài khoản"]["id_tai_khoan"]))
@@ -280,7 +267,6 @@ class ProfileHS(QMainWindow):
                     self.update_achievement_display(student["Thành tựu"])
                     break
             else:
-                # Nếu không tìm thấy học sinh hoặc khóa 'id_tai_khoan' không tồn tại
                 self.account_name.setText("N/A")
                 self.call_number.setText("N/A")
                 self.jobs.setText("N/A")
@@ -290,7 +276,6 @@ class ProfileHS(QMainWindow):
                 self.last_online.setText("N/A")
                 self.numbe_av.setText("N/A")
 
-            # Kiểm tra thay đổi thành tựu sau khi cập nhật thông tin profile
             self.check_for_new_achievements()
         except Exception as e:
             print(f"Lỗi trong update_profile: {e}")
@@ -336,22 +321,18 @@ class ProfileHS(QMainWindow):
         layout = QVBoxLayout()
         dialog.setLayout(layout)
 
-        # ComboBox để chọn ô
         self.slot_combo_box = QComboBox()
         for i in range(10):
             self.slot_combo_box.addItem(f"Ô {i+1}")
         layout.addWidget(QLabel("Chọn ô hiển thị:"))
         layout.addWidget(self.slot_combo_box)
 
-        # ListWidget để chọn thành tựu (di chuyển ra ngoài vòng lặp)
         self.achievement_list_widget = QListWidget()
         layout.addWidget(QLabel("Chọn thành tựu:"))
         layout.addWidget(self.achievement_list_widget)
 
-        # Kết nối sự kiện thay đổi lựa chọn ô với hàm cập nhật danh sách thành tựu
         self.slot_combo_box.currentIndexChanged.connect(self.update_achievement_list)
 
-        # Hiển thị danh sách thành tựu cho ô đầu tiên mặc định
         self.update_achievement_list(0)
 
         confirm_button = QPushButton("Xác nhận")
@@ -371,9 +352,6 @@ class ProfileHS(QMainWindow):
         selected_achievement = self.achievement_list_widget.currentItem().text() if self.achievement_list_widget.currentItem() else None
         self.selected_achievements[selected_slot] = selected_achievement
         self.update_achievement_display(self.load_achievement_data())
-        # sound = SoundLoader.load("sound/complete_acv.mp3")
-        # if sound:
-        #     sound.play()
 
         self.update_achievement_display(self.load_achievement_data())
         dialog.close()
@@ -382,7 +360,6 @@ class ProfileHS(QMainWindow):
         for student in self.data["Danh_sach_hoc_sinh"]:
             if student["Thông tin tài khoản"]["id_tai_khoan"] == self.tai_khoan["Thông tin tài khoản"]["id_tai_khoan"]:
                 achievements = student.get("Thành tựu", {})
-                # Chuyển đổi giá trị chuỗi "false" sang boolean False
                 for key, value in achievements.items():
                     if isinstance(value, dict):
                         for level, achieved in value.items():
@@ -394,7 +371,6 @@ class ProfileHS(QMainWindow):
         return {}
     
     def update_achievement_display(self, achievements):
-        # Hiển thị các thành tựu được chọn (KHÔNG kiểm tra thay đổi file JSON ở đây)
         for i in range(10):
             if i < len(self.achievement_widgets):
                 label, progress_bar = self.achievement_widgets[i]
@@ -414,10 +390,8 @@ class ProfileHS(QMainWindow):
                                 progress_bar.setValue(progress)
                                 break
                 else:
-                    # Nếu không có thành tựu được chọn cho ô này, xóa nội dung
                     if label is not None:
                         label.clear()
                     if progress_bar is not None:
                         progress_bar.setValue(0)
-        # Cập nhật giá trị cũ của thành tựu
         self.old_achievements = copy.deepcopy(achievements)
