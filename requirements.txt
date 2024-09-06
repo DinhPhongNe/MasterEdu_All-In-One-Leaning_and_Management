@@ -4,3 +4,6 @@ opencv-python
 PyQt6
 simpleaudio
 watchdog
+pymupdf
+PyPDF2
+pillow

@@ -9,6 +9,7 @@ from student_grades import StudentGrades
 from view_assignments import ViewAssignments
 from assignment_upload import AssignmentUpload
 from menu_select_tc import MenuSelectTC
+from document_management import DocumentManagementWindow  # Thêm import cho quản lý tài liệu
 
 
 class TeacherMain(QMainWindow, StudentGrades, ViewAssignments, AssignmentUpload):
@@ -58,7 +59,18 @@ class TeacherMain(QMainWindow, StudentGrades, ViewAssignments, AssignmentUpload)
         self.xem_hk1.currentTextChanged.connect(lambda text: self.show_column(self.table_HK1, text))
         self.xem_hk2.currentTextChanged.connect(lambda text: self.show_column(self.table_HK2, text))
         self.xem_cn.currentTextChanged.connect(lambda text: self.show_column(self.table_CN, text))
+        
+        self.table_tai_lieu = self.findChild(QTableWidget, "tableWidget")
+        self.xem_favor_tai_lieu = self.findChild(QPushButton, "xem_favor_tai_lieu")
+        self.upload_tai_lieu = self.findChild(QPushButton, "upload_tai_lieu")
 
+        self.xem_favor_tai_lieu.clicked.connect(self.show_favorite_documents)
+        self.upload_tai_lieu.clicked.connect(self.upload_document)
+
+        self.setup_document_table()
+        self.load_documents()
+        
+        
         self.chon_hs_combo = QComboBox()
         self.load_data()
 

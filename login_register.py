@@ -181,19 +181,22 @@ class LoginRegister(QMainWindow):
         # Tạo cấu trúc "Thông tin tài khoản" và "Thành tựu"
         new_student = {
             "None": 0,
-            "Số thứ tự": "", # Sẽ được điền sau
-            "Họ": "", # Sẽ được điền sau
-            "Tên": "", # Sẽ được điền sau
+            "Số thứ tự": "",
+            "Họ": "",
+            "Tên": "",
             "Thông tin tài khoản": {
-                "id_tai_khoan": self.generate_random_student_id(),
-                "grade": None, # Sẽ được điền sau
-                "class_name": None, # Sẽ được điền sau
-                "ten_tai_khoan": "", # Sẽ được điền sau
+                "id_tai_khoan": None,
+                "grade": None,
+                "class_name": None,
+                "ten_tai_khoan": None,
                 "MK_tai_khoan": password,
-                "so_thu_tu": None, # Sẽ được điền sau
-                "so_dien_thoai": str(phone),
-                "birthday": "", # Sẽ được điền sau
-                "age": None # Sẽ được điền sau
+                "so_thu_tu": None,
+                "so_dien_thoai": None,
+                "birthday": None,
+                "age": None,
+                "account_level": None,
+                "account_exp": None,
+                "last_online": None
             },
             "Thành tựu": {
                 "Study hard": {

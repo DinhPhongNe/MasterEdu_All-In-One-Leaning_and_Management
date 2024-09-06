@@ -4,18 +4,18 @@ from PyQt6 import uic
 from student_grades import StudentGrades
 from view_assignments import ViewAssignments
 from menu_select_hs import MenuSelectHS
+from document_management import DocumentManagementWindow  # Thêm import cho quản lý tài liệu
 
-class StudentMain(QMainWindow, StudentGrades, ViewAssignments):
+class StudentMain(QMainWindow, StudentGrades, ViewAssignments):  # Kế thừa DocumentManagement
     def __init__(self, data, tai_khoan) -> None:
         super().__init__()
         uic.loadUi("gui/main-st.ui", self)
         self.data = data
         self.tai_khoan = tai_khoan
-        self.current_user = "student"  # Đặt người dùng hiện tại là học sinh
-        self.last_login_time = None # Lưu thời gian đăng nhập cuối cùng
-
-        # Khởi tạo xem_bai_tap_dialog là None
+        self.current_user = "student"
+        self.last_login_time = None
         self.xem_bai_tap_dialog = None
+        self.document_dialog = None
         self.msg_box = QMessageBox()
         self.msg_box.setWindowTitle("Lỗi")
         self.msg_box.setIcon(QMessageBox.Icon.Warning)
@@ -41,7 +41,6 @@ class StudentMain(QMainWindow, StudentGrades, ViewAssignments):
         self.current_student_table = self.table_HK2_hs
         self.current_student_table = self.table_CN_hs
 
-        # Sửa lỗi: Loại bỏ self.student_main.
         self.logOut_btn_tc.clicked.connect(self.logout)
         self.xem_bai_tap_hs.clicked.connect(self.show_xem_bai_tap_dialog)
         self.logOut_btn_tc.clicked.connect(self.return_to_menu_hs)
@@ -61,12 +60,10 @@ class StudentMain(QMainWindow, StudentGrades, ViewAssignments):
         import os
         self.last_login_time = os.path.getmtime(__file__)
 
-        # Kiểm tra xem QTabWidget có được tìm thấy hay không
         if self.tab_widget_hs is None:
             self.msg_box.setText("Hệ thống đang lỗi, xin vui lòng thử lại sau")
             self.msg_box.exec()
 
-        # Kiểm tra xem các QComboBox có được tìm thấy hay không
         if self.xem_hk1_hs is None:
             self.msg_box.setText("Hệ thống đang lỗi, xin vui lòng thử lại sau")
             self.msg_box.exec()
@@ -77,7 +74,6 @@ class StudentMain(QMainWindow, StudentGrades, ViewAssignments):
             self.msg_box.setText("Hệ thống đang lỗi, xin vui lòng thử lại sau")
             self.msg_box.exec()
 
-        # Kiểm tra xem các QTableWidget có được tìm thấy hay không
         if self.table_HK1_hs is None:
             self.msg_box.setText("Hệ thống đang lỗi, xin vui lòng thử lại sau")
             self.msg_box.exec()
@@ -89,8 +85,8 @@ class StudentMain(QMainWindow, StudentGrades, ViewAssignments):
             self.msg_box.exec()
 
     def return_to_menu_hs(self):
-        self.close()  # Đóng student_main
-        self.menu_hs = MenuSelectHS(self.data, self.tai_khoan)  # Tạo lại menu select cho học sinh
+        self.close()
+        self.menu_hs = MenuSelectHS(self.data, self.tai_khoan)
         self.menu_hs.show()
 
     def fill_tables_hs(self):
@@ -151,7 +147,7 @@ class StudentMain(QMainWindow, StudentGrades, ViewAssignments):
                                 ]
                             ):
                                 table.setItem(
-                                    0,  # Luôn là hàng 0 vì chỉ có 1 học sinh
+                                    0,
                                     i + 3 + j,
                                     QTableWidgetItem(
                                         str(
@@ -247,4 +243,3 @@ class StudentMain(QMainWindow, StudentGrades, ViewAssignments):
 
     def logout(self):
         self.close()
-        # Hiển thị lại giao diện đăng nhập hoặc thực hiện các thao tác đăng xuất khác

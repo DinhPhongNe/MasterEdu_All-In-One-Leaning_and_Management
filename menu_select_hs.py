@@ -1,8 +1,9 @@
-from PyQt6.QtWidgets import QMainWindow
+from PyQt6.QtWidgets import QMainWindow, QTableWidget
 from PyQt6 import uic
 from PyQt6.QtCore import QTimer
 from coming_soon import ComingSoon
 from profile_hs import ProfileHS
+from document_management import DocumentManagementWindow
 
 class MenuSelectHS(QMainWindow):
     def __init__(self, data, tai_khoan):
@@ -17,7 +18,7 @@ class MenuSelectHS(QMainWindow):
         self.school_notification.clicked.connect(self.show_coming_soon)
         self.learning_plan.clicked.connect(self.show_coming_soon)
         self.tutor.clicked.connect(self.show_coming_soon)
-        self.learning_material_management.clicked.connect(self.show_coming_soon)
+        self.learning_material_management.clicked.connect(self.open_learning_material_management)
         self.join_club.clicked.connect(self.show_coming_soon)
         self.ai_ask.clicked.connect(self.show_coming_soon)
         self.library.clicked.connect(self.show_coming_soon)
@@ -33,6 +34,10 @@ class MenuSelectHS(QMainWindow):
         from student_main import StudentMain
         self.student_main = StudentMain(self.data, self.tai_khoan)
         self.student_main.show()
+        
+    def open_learning_material_management(self):
+        self.document_management = DocumentManagementWindow(self.data, self.tai_khoan)
+        self.document_management.show()
 
     def open_profile_hs(self):
         self.profile_hs = ProfileHS(self.data, self.tai_khoan)

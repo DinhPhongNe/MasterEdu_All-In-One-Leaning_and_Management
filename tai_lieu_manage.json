@@ -1,0 +1,11 @@
+[
+    {
+        "nguoi_dang": "Admin",
+        "ma_tai_lieu": "1234567890",
+        "tai_lieu_mon": "Toán",
+        "ngay_dang": "2024-08-08 15:00:00",
+        "ghi_chu": "Bài tập về nhà",
+        "duong_dan": "./tai_lieu_management/CTSTTTNTPHCM.pdf",
+        "yeu_thich": []
+    }
+]

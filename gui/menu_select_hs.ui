@@ -14,9 +14,33 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: #356a9c;</string>
+   <string notr="true">
+QPushButton
+{
+    background-color: #444;
+    border: 2px solid #666;
+    color: #fff;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+QPushButton:hover
+{
+    background-color: #666;
+    border: 2px solid #aaa;
+}
+
+QPushButton:disabled
+{
+    background-color: #111;
+    border: 2px solid #222;
+    color: #888;
+}</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: #356a9c;</string>
+   </property>
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>

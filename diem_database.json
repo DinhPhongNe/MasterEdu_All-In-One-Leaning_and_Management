@@ -14,12 +14,15 @@
                 "so_thu_tu": 41,
                 "so_dien_thoai": 9876543210,
                 "birthday": "27-04-2006",
-                "age": 16
+                "age": 16,
+                "account_level": 100,
+                "account_exp": 5000000,
+                "last_online": null
             },
             "Thành tựu": {
                 "Study hard": {
-                    "level_1": false,
-                    "level_2": false,
+                    "level_1": true,
+                    "level_2": true,
                     "level_3": false,
                     "level_4": false,
                     "level_5": false
